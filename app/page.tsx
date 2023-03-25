@@ -1,6 +1,12 @@
 import EntryCard from "@/components/EntryCard";
 import EntryType from "@/interfaces/entry";
-import { getAllEntries } from "@/lib/api";
+import {
+  getAllEntries,
+  getCategoriesByCount,
+  getCompaniesByCount,
+  getModelsByCount,
+} from "@/lib/api";
+import Link from "next/link";
 
 type Props = {
   entries: EntryType[];
@@ -8,6 +14,9 @@ type Props = {
 
 export default function Home() {
   const entries = getAllEntries();
+  const categoryByCount = getCategoriesByCount();
+  const companiesByCount = getCompaniesByCount();
+  const modelsByCount = getModelsByCount();
 
   return (
     <main>
@@ -24,7 +33,7 @@ export default function Home() {
         </article>
         <article className="flex flex-col gap-12 max-w-sm justify-end">
           {entries.slice(0, 4).map((entry) => (
-            <EntryCard entry={entry} />
+            <EntryCard key={entry.slug} entry={entry} withTopline={true} />
           ))}
         </article>
       </section>
@@ -35,8 +44,77 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {entries.slice(0, 32).map((entry) => (
-            <EntryCard entry={entry} withTopline={false} />
+            <EntryCard key={entry.slug} entry={entry} withTopline={false} />
           ))}
+        </div>
+      </section>
+      <section className="mt-32 flex flex-col gap-8 pt-8">
+        <div className="flex items-center gap-12">
+          <h2 className="font-serif text-4xl inline">Categories</h2>
+          <hr className="grow" />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-12">
+          {categoryByCount.map((c) => {
+            return (
+              <div key={c.category} className="font-mono uppercase text-2xl">
+                <Link href={`/categories/${c.category}`}>
+                  <span>{c.category}</span>
+                  <span className="ml-4 opacity-50">{c.count}</span>
+                </Link>
+              </div>
+            );
+          })}
+          <div key={"more"} className="font-mono uppercase text-2xl">
+            <Link href={`/categories`}>
+              <span>More &rarr;</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="mt-32 flex flex-col gap-8 pt-8">
+        <div className="flex items-center gap-12">
+          <h2 className="font-serif text-4xl inline">Companies</h2>
+          <hr className="grow" />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-12">
+          {companiesByCount.map((c) => {
+            return (
+              <div key={c.company} className="font-mono uppercase text-2xl">
+                <Link href={`/companies/${c.company}`}>
+                  <span>{c.company}</span>
+                  <span className="ml-4 opacity-50">{c.count}</span>
+                </Link>
+              </div>
+            );
+          })}
+          <div key={"more"} className="font-mono uppercase text-2xl">
+            <Link href={`/companies`}>
+              <span>More &rarr;</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="mt-32 flex flex-col gap-8 pt-8">
+        <div className="flex items-center gap-12">
+          <h2 className="font-serif text-4xl inline">Models</h2>
+          <hr className="grow" />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-12">
+          {modelsByCount.map((c) => {
+            return (
+              <div key={c.model} className="font-mono uppercase text-2xl">
+                <Link href={`/companies/${c.model}`}>
+                  <span>{c.model}</span>
+                  <span className="ml-4 opacity-50">{c.count}</span>
+                </Link>
+              </div>
+            );
+          })}
+          <div key={"more"} className="font-mono uppercase text-2xl">
+            <Link href={`/models`}>
+              <span>More &rarr;</span>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

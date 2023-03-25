@@ -34,3 +34,51 @@ export function getAllEntries() {
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
 }
+
+export function getCategoriesByCount() {
+  const categories = getAllEntries()
+    .map((e) => e.categories)
+    .flat();
+
+  const uniqueCategories = [...new Set(categories)];
+  const categoryByCount = uniqueCategories.map((c) => {
+    return {
+      category: c,
+      count: categories.filter((e) => e === c).length,
+    };
+  });
+
+  return categoryByCount.sort((a, b) => b.count - a.count);
+}
+
+export function getCompaniesByCount() {
+  const companies = getAllEntries()
+    .map((e) => e.companies)
+    .flat();
+
+  const uniqueCompanies = [...new Set(companies)];
+  const companiesByCount = uniqueCompanies.map((c) => {
+    return {
+      company: c,
+      count: companies.filter((e) => e === c).length,
+    };
+  });
+
+  return companiesByCount.sort((a, b) => b.count - a.count);
+}
+
+export function getModelsByCount() {
+  const models = getAllEntries()
+    .map((e) => e.models)
+    .flat();
+
+  const uniqueModels = [...new Set(models)];
+  const modelsByCount = uniqueModels.map((c) => {
+    return {
+      model: c,
+      count: models.filter((e) => e === c).length,
+    };
+  });
+
+  return modelsByCount.sort((a, b) => b.count - a.count);
+}

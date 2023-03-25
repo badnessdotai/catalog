@@ -1,8 +1,4 @@
-import { getAllEntries } from "@/lib/api";
-
 export default function About() {
-  const entries = getAllEntries();
-
   return (
     <main>
       <section className="flex lg:mt-64 gap-8">
