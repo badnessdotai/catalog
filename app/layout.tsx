@@ -16,12 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Fonts />
-      <body className="bg-white dark:bg-black text-black dark:text-white m-4 md:m-8 lg:mx-16">
+      <body className="bg-white dark:bg-black text-black dark:text-white m-4 md:m-8 lg:mx-16 2xl:mx-auto 2xl:max-w-screen-2xl">
         <nav className="flex items-center justify-between gap-6">
           <Link href="/" className="text-3xl font-mono font-bold">
             AI BADNESS
           </Link>
-          <hr className="grow" />
+          <hr className="grow border-b border-b-4" />
           <div className="flex items-center gap-6">
             <Link href="/" className="font-mono text-xl">
               SEARCH
