@@ -21,12 +21,9 @@ export default function RootLayout({
           <Link href="/" className="text-3xl font-mono font-bold">
             AI BADNESS
           </Link>
-          <hr className="grow border-b border-b-4" />
+          <hr className="grow border-b" />
           <div className="flex items-center gap-6">
-            <Link href="/" className="font-mono text-xl">
-              SEARCH
-            </Link>
-            <Link href="/" className="font-mono text-xl">
+            <Link href="/about" className="font-mono text-xl">
               ABOUT
             </Link>
             <Link href="/" className="font-mono text-xl">

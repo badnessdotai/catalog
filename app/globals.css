@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+hr {
+  @apply bg-black border-black dark:bg-white dark:border-white border-b;
+}

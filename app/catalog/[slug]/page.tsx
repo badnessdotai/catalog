@@ -19,14 +19,14 @@ export default async function EntryPage({
   return (
     <article>
       <div className="flex gap-8 w-full justify-end">
-        <div className="w-1/5" />
-        <h1 className="w-4/5 justify-end font-serif text-7xl mt-64">
+        <div className="w-1/6" />
+        <h1 className="w-5/6 justify-end font-serif text-7xl mt-64">
           {entry.title}
         </h1>
       </div>
       <hr className="my-8" />
       <div className="flex gap-8 w-full">
-        <div className="w-1/5">
+        <div className="w-1/6">
           <p className="font-mono text-3xl truncate uppercase">
             <span className="font-bold">
               {entry.date.toLocaleDateString("en-US", {
@@ -37,7 +37,7 @@ export default async function EntryPage({
             </span>
           </p>
         </div>
-        <div className="w-4/5">
+        <div className="w-5/6">
           <p className="font-mono text-3xl uppercase flex flex-wrap gap-16">
             {entry.categories.length > 0 && (
               <span className="font-bold">{entry.categories.join(", ")}</span>
@@ -53,7 +53,7 @@ export default async function EntryPage({
       </div>
       <hr className="my-8" />
       <div className="flex gap-8 w-full">
-        <div className="w-1/5" />
+        <div className="w-1/6" />
         <div
           className="prose prose-2xl prose-black dark:prose-invert text-black dark:text-white"
           dangerouslySetInnerHTML={{ __html: renderedMarkdown }}
