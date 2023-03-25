@@ -20,18 +20,18 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex h-[90vh] justify-between gap-8">
-        <article className="flex flex-col gap-8 justify-end max-w-5xl">
-          <h1 className="text-8xl font-serif">
+      <section className="flex h-[85vh] justify-between gap-8">
+        <article className="flex flex-col gap-8 justify-end lg:max-w-5xl">
+          <h1 className="text-6xl lg:text-8xl font-serif">
             An open, collaborative catalog of AI badness
           </h1>
-          <p className="text-3xl font-sans">
+          <p className="text-2xl lg:text-3xl font-sans">
             To build safer and more responsible AI systems, we must learn from
             the mistakes of the past. Badness.org is an open-source catalog of
             AI systems causing real-world harm.
           </p>
         </article>
-        <article className="flex flex-col gap-12 max-w-sm justify-end">
+        <article className="flex-col gap-12 md:max-w-sm justify-end mt-16 md:mt-0 hidden lg:flex">
           {entries.slice(0, 4).map((entry) => (
             <EntryCard key={entry.slug} entry={entry} withTopline={true} />
           ))}
@@ -53,7 +53,7 @@ export default function Home() {
           <h2 className="font-serif text-4xl inline">Categories</h2>
           <hr className="grow" />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-6 md:gap-12">
           {categoryByCount.map((c) => {
             return (
               <div key={c.category} className="font-mono uppercase text-2xl">
@@ -76,7 +76,7 @@ export default function Home() {
           <h2 className="font-serif text-4xl inline">Companies</h2>
           <hr className="grow" />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-6 md:gap-12">
           {companiesByCount.map((c) => {
             return (
               <div key={c.company} className="font-mono uppercase text-2xl">
@@ -99,7 +99,7 @@ export default function Home() {
           <h2 className="font-serif text-4xl inline">Models</h2>
           <hr className="grow" />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-6 md:gap-12">
           {modelsByCount.map((c) => {
             return (
               <div key={c.model} className="font-mono uppercase text-2xl">

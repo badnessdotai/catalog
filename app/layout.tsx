@@ -16,21 +16,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Fonts />
-      <body className="bg-white dark:bg-black text-black dark:text-white m-4 md:m-8 lg:mx-16 2xl:mx-auto 2xl:max-w-screen-2xl w-full">
-        <nav className="flex items-center justify-between gap-6">
-          <Link href="/" className="text-3xl font-mono font-bold">
+      <body className="bg-white dark:bg-black text-black dark:text-white p-4 mx-auto md:p-8 overflow-x-hidden 2xl:max-w-screen-2xl">
+        <nav className="flex items-baseline md:items-center justify-between gap-6">
+          <Link href="/" className="text-2xl md:text-3xl font-mono font-bold">
             AI BADNESS
           </Link>
-          <hr className="grow border-b" />
+          <hr className="border-b hidden md:block grow" />
           <div className="flex items-center gap-6">
-            <Link href="/about" className="font-mono text-xl">
+            <Link href="/about" className="font-mono text-lg md:text-xl">
               ABOUT
             </Link>
-            <Link href="/contribute" className="font-mono text-xl">
+            <Link href="/contribute" className="font-mono text-lg md:text-xl">
               CONTRIBUTE
             </Link>
           </div>
         </nav>
+        <hr className="grow mt-2 md:hidden" />
         {children}
       </body>
     </html>

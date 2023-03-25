@@ -27,15 +27,15 @@ export default async function EntryPage({
   return (
     <article>
       <div className="flex gap-8 w-full justify-end">
-        <div className="w-1/6" />
-        <h1 className="w-5/6 justify-end font-serif text-7xl mt-64">
+        <div className="hidden lg:block lg:w-1/6" />
+        <h1 className="lg:w-5/6 justify-end font-serif text-4xl lg:text-7xl mt-64">
           {entry.title}
         </h1>
       </div>
-      <hr className="my-8" />
-      <div className="flex gap-8 w-full">
-        <div className="md:w-1/6">
-          <p className="font-mono text-3xl truncate uppercase">
+      <hr className="my-4 lg:my-8" />
+      <div className="my-4 flex flex-col lg:flex-row gap-4 lg:gap-8 w-full">
+        <div className="lg:w-1/6">
+          <p className="font-mono text-lg lg:text-3xl truncate uppercase">
             <span className="font-bold">
               {entry.date.toLocaleDateString("en-US", {
                 day: "numeric",
@@ -45,8 +45,8 @@ export default async function EntryPage({
             </span>
           </p>
         </div>
-        <div className="md:w-5/6">
-          <p className="font-mono text-3xl uppercase flex flex-wrap gap-16">
+        <div className="lg:w-5/6">
+          <p className="font-mono text-lg lg:text-3xl uppercase flex flex-wrap gap-4 lg:gap-16">
             {entry.categories.length > 0 && (
               <span className="font-bold flex flex-wrap gap-8">
                 {entry.categories.map((c) => (
@@ -77,18 +77,18 @@ export default async function EntryPage({
           </p>
         </div>
       </div>
-      <hr className="my-8" />
-      <div className="flex gap-8 w-full">
-        <div className="md:w-1/6" />
+      <hr className="my-4 lg:my-8" />
+      <div className="flex gap-8 w-full mt-4">
+        <div className="hidden lg:block lg:w-1/6" />
         <div
-          className="prose prose-2xl prose-black dark:prose-invert text-black dark:text-white"
+          className="prose prose-xl lg:prose-2xl prose-black dark:prose-invert text-black dark:text-white"
           dangerouslySetInnerHTML={{ __html: renderedMarkdown }}
         />
       </div>
       {relatedEntries.length > 0 && (
         <div className="flex gap-8 w-full mt-16">
-          <div className="md:w-1/6" />
-          <div className="md:w-5/6">
+          <div className="hidden lg:block lg:w-1/6" />
+          <div className="lg:w-5/6">
             <div className="font-mono uppercase text-xl mb-8">See Also</div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {relatedEntries.slice(0, 3).map((e) => (
