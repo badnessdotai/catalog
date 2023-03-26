@@ -4,6 +4,7 @@ import Fonts from "../components/Fonts";
 import Head from "next/head";
 
 export const metadata = {
+  title: "Catalog of generative AI harms | Badness.ai",
   description:
     "To build safer and more responsible AI systems, we must learn from the mistakes of the past.",
 };
@@ -15,9 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <title>Catalog of generative AI harms | Badness.ai</title>
-      </Head>
       <Fonts />
       <body className="bg-[#faf8f0] dark:bg-black text-black dark:text-white p-4 mx-auto md:p-8 overflow-x-hidden 2xl:max-w-screen-2xl">
         <nav className="flex items-baseline md:items-center justify-between gap-6">
