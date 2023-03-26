@@ -38,7 +38,37 @@ export function getAllEntries() {
 export function getCategoryDescription(categoryName: string) {
   switch (categoryName) {
     case 'Harassment':
-      return 'The use of aggressive pressure or intimidation againt someone.';
+      return 'Any behavior that involves aggressive pressure or intimidation against someone, whether it be physical or verbal actions, stalking, or unwanted sexual advances.'
+    case 'Cybercrime':
+      return 'Illegal activities committed using a computer or the internet, such as phishing attacks, scams, or identity theft, with the aim of stealing money or sensitive information.'
+    case 'Deception':
+      return 'Any actions exhibited by an AI system that involve the use of false or misleading information to achieve a goal, such as gaining influence or power.'
+    case 'User Manipulation':
+      return 'Any behavior that attempts to influence a user\'s actions or decisions using psychological tactics, such as clickbait, social engineering, or manipulative design.'
+    case 'Child Safety':
+      return 'Actions that harm or threaten to harm a child, including neglect, exploitation, or physical, emotional, or sexual abuse.'
+    case 'Deepfakes':
+      return 'Media that has been manipulated using artificial intelligence or machine learning to make it appear as though it is real, with the intention of deceiving people and spreading false information.'
+    case 'Hate Speech':
+      return 'Any speech or expression that attacks, threatens, or insults a particular person or group on the basis of their race, religion, nationality, gender, sexual orientation, or other personal characteristics.'
+    case 'Aggression':
+      return 'Any behavior that is intended to cause harm, injury, or damage to a person or property, including physical, verbal, or emotional aggression.'
+    case 'Inaccuracies':
+      return 'Information that is false, misleading, or incorrect, and is spread through various mediums, including news articles, social media, or other online platforms.'
+    case 'Volume/Spam':
+      return 'Excessive sending of unsolicited or irrelevant messages, emails, or comments, often for the purpose of advertising or promoting a product or service.'
+    case 'Mis/disinformation':
+      return 'Information that is intentionally spread with the aim of deceiving or manipulating people, often for political or ideological reasons, and can include false or misleading claims and rumors.'
+    case 'Cybersecurity':
+      return 'Protection of computer systems, networks, or devices against any form of threat or attack, including hacking, phishing, malware, or ransomware.'
+    case 'Overreliance':
+      return 'Excessive dependence on technology or algorithms that can lead to errors or biases in decision-making processes, or that may cause harm to individuals or society as a whole.'
+    case 'Harmful Bias':
+      return 'Presence of biases or prejudices in artificial intelligence or machine learning models that can lead to unfair or discriminatory outcomes, often against marginalized or underrepresented groups.'
+    case 'Misrepresentation':
+      return 'Use of false, misleading, or exaggerated information to present a person, business, product, or service in a way that is deceptive or dishonest.'
+    case 'IP Theft':
+      return 'Unauthorized use or theft of intellectual property, including patents, copyrights, or trade secrets, often for the purpose of financial gain.'
     default:
       return 'This category is yet to be defined.';
   }

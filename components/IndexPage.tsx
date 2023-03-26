@@ -6,7 +6,7 @@ type Props = {
 };
 
 export default function IndexPage({ children, title, category, description }: Props) {
-  const titleClass = description ? 'font-serif text-6xl lg:text-9xl mb-4' : 'font-serif text-6xl lg:text-9xl mb-32';
+  const titleClass = description ? 'font-serif text-6xl lg:text-9xl mb-6' : 'font-serif text-6xl lg:text-9xl mb-32';
   return (
     <main className="flex gap-8">
       <div className="md:w-1/6 hidden md:block" />
