@@ -10,11 +10,11 @@ export default function About() {
           </p>
           <div className="prose prose-2xl dark:prose-invert text-black dark:text-white prose-headings:font-serif prose-headings:font-normal">
             <p>
-              Aspirationally, this website will be the largest repository of
-              verified incidents of distinct harm caused by AI systems. We can
-              only achieve this goal with help from contributors like you. This
-              page lays out the values of our project, various ways you can
-              contribute, and guidelines for our content.
+              Aspirationally, this website will be the most high-quality and
+              accessible catalog of verified harm caused by AI systems. We can
+              only achieve this ambitious goal with help from contributors like
+              you. This page lays out the values of our project, various ways
+              you can contribute, and guidelines for our content.
             </p>
             <h2>Our Values</h2>
             <p>Our project is guided by the following values:</p>

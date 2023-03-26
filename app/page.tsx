@@ -27,8 +27,8 @@ export default function Home() {
           </h1>
           <p className="text-2xl lg:text-3xl font-sans">
             To build safer and more responsible AI systems, we must learn from
-            the mistakes of the past. Badness.org is an open-source catalog of
-            AI systems causing real-world harm.
+            the mistakes of the past. Badness.ai is a curated catalog of AI
+            systems causing real-world harm.
           </p>
         </article>
         <article className="flex-col gap-12 md:max-w-sm justify-end mt-16 md:mt-0 hidden lg:flex">
