@@ -30,6 +30,15 @@ export default function Home() {
             the mistakes of the past. Badness.ai is a curated catalog of AI
             systems causing real-world harm.
           </p>
+          <p className="text-xl font-mono uppercase flex gap-8 items-center">
+            <Link
+              href="https://badness.substack.com"
+              className="border border-2 py-2 px-4 border-black dark:border-white"
+            >
+              SUBSCRIBE
+            </Link>
+            <Link href="/contribute">CONTRIBUTE</Link>
+          </p>
         </article>
         <article className="flex-col gap-12 md:max-w-sm justify-end mt-16 md:mt-0 hidden lg:flex">
           {entries.slice(0, 4).map((entry) => (

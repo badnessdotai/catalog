@@ -1,14 +1,14 @@
 export default function About() {
   return (
     <main>
-      <section className="flex lg:mt-64 gap-8">
+      <section className="flex mt-32 lg:mt-64 gap-8">
         <div className="w-1/6 hidden md:block" />
         <article className="flex flex-col gap-8 justify-end max-w-5xl">
-          <h1 className="text-9xl font-serif">Contribute</h1>
-          <p className="text-4xl font-sans">
+          <h1 className="text-6xl lg:text-9xl font-serif">Contribute</h1>
+          <p className="text-xl lg:text-4xl font-sans">
             There's tons of work to do. Here's how you can help.
           </p>
-          <div className="prose prose-2xl dark:prose-invert text-black dark:text-white prose-headings:font-serif prose-headings:font-normal">
+          <div className="prose lg:prose-2xl dark:prose-invert text-black dark:text-white prose-headings:font-serif prose-headings:font-normal">
             <p>
               Aspirationally, this website will be the most high-quality and
               accessible catalog of verified harm caused by AI systems. We can

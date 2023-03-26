@@ -3,6 +3,7 @@
 import { Source_Sans_Pro, Source_Serif_Pro } from "next/font/google";
 
 import "@fontsource/iosevka";
+import "@fontsource/iosevka/800.css";
 
 import { useServerInsertedHTML } from "next/navigation";
 

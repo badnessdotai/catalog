@@ -18,16 +18,22 @@ export default function RootLayout({
       <Fonts />
       <body className="bg-[#faf8f0] dark:bg-black text-black dark:text-white p-4 mx-auto md:p-8 overflow-x-hidden 2xl:max-w-screen-2xl">
         <nav className="flex items-baseline md:items-center justify-between gap-6">
-          <Link href="/" className="text-2xl md:text-3xl font-mono font-bold">
+          <Link href="/" className=" md:text-3xl font-mono font-bold">
             AI BADNESS
           </Link>
           <hr className="border-b hidden md:block grow" />
           <div className="flex items-center gap-6">
-            <Link href="/about" className="font-mono text-lg md:text-xl">
+            <Link href="/about" className="font-mono  md:text-xl">
               ABOUT
             </Link>
-            <Link href="/contribute" className="font-mono text-lg md:text-xl">
+            <Link href="/contribute" className="font-mono md:text-xl">
               CONTRIBUTE
+            </Link>
+            <Link
+              href="https://badness.substack.com"
+              className="font-mono  md:text-xl"
+            >
+              SUBSCRIBE
             </Link>
           </div>
         </nav>
