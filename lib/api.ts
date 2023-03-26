@@ -18,7 +18,7 @@ export function getPostBySlug(slug: string): EntryType {
   const entry: any = {}
 
   Object.keys(data).forEach((key) => {
-    entry[key] = data[key] 
+    entry[key] = data[key]
   })
   entry['slug'] = realSlug
   entry['content'] = content
@@ -33,6 +33,15 @@ export function getAllEntries() {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
+}
+
+export function getCategoryDescription(categoryName: string) {
+  switch (categoryName) {
+    case 'Harassment':
+      return 'The use of aggressive pressure or intimidation againt someone.';
+    default:
+      return 'This category is yet to be defined.';
+  }
 }
 
 export function getCategoriesByCount() {
