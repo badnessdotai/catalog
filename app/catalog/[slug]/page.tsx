@@ -5,6 +5,7 @@ import {
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Link from "next/link";
 import EntryCard from "@/components/EntryCard";
+import Head from "next/head";
 
 export default async function EntryPage({
   params,
@@ -102,6 +103,19 @@ export default async function EntryPage({
       )}
     </article>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  // https://beta.nextjs.org/docs/api-reference/metadata
+
+  const { slug } = params;
+  const entry = getEntryBySlug(slug);
+
+  return { title: entry.title + " | Badness.ai" };
 }
 
 export async function generateStaticParams() {
