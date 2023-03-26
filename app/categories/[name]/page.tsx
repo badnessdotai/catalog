@@ -1,6 +1,6 @@
 import EntryCard from "@/components/EntryCard";
 import IndexPage from "@/components/IndexPage";
-import { getAllEntries, getCategoriesByCount } from "@/lib/api";
+import { getAllEntries, getCategoryDescription, getCategoriesByCount } from "@/lib/api";
 import Link from "next/link";
 
 export default function Categories({ params }: { params: { name: string } }) {
@@ -9,12 +9,14 @@ export default function Categories({ params }: { params: { name: string } }) {
   // De-url encode the name
   const decodedName = decodeURIComponent(name);
 
+  const categoryDescription = getCategoryDescription(decodedName)
+
   const entries = getAllEntries().filter((e) =>
     e.categories.includes(decodedName)
   );
 
   return (
-    <IndexPage title={decodedName} category="Category">
+    <IndexPage title={decodedName} category="Category" description={categoryDescription}>
       {entries.map((c) => {
         return <EntryCard key={c.slug} entry={c} withTopline={true} />;
       })}
