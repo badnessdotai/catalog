@@ -26,10 +26,10 @@ export default async function EntryPage({
     .filter((e) => e.slug !== entry.slug);
 
   return (
-    <article>
-      <div className="flex flex-col items-start mt-32">
-        <div className="font-mono text-lg lg:text-3xl truncate uppercase">
-          <span className="font-bold">
+    <article className="mx-auto max-w-screen-lg">
+      <div className="flex flex-col items-start mt-16 lg:mt-32">
+        <div className="font-mono text-lg lg:text-xl truncate uppercase">
+          <span>
             {entry.date.toLocaleDateString("en-US", {
               day: "numeric",
               month: "short",
@@ -37,17 +37,17 @@ export default async function EntryPage({
             })}
           </span>
         </div>
-        <h1 className="font-serif text-4xl lg:text-7xl mt-4">
+        <h1 className="font-serif text-3xl md:text-6xl mt-2 lg:mt-4">
           {entry.title}
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row items-start mt-24">
-        <div className="w-1/5 lg:w-1/6">
-          <div className="font-mono text-lg lg:text-3xl truncate uppercase">
+      <div className="flex flex-col lg:flex-row items-start mt-12 lg:mt-24">
+        <div className="lg:w-1/6">
+          <div className="font-mono lg:text-xl truncate uppercase flex flex-wrap lg:flex-col gap-12">
             {entry.categories.length > 0 && (
               <div>
-                <p className=" text-gray-400 mb-2">CATEGORIES</p>
-                <span className=" flex flex-wrap gap-2">
+                <p className="text-gray-400 mb-1">CATEGORIES</p>
+                <span className="flex flex-col gap-1">
                   {entry.categories.map((c) => (
                     <Link key={c} href={`/categories/${c}`}>
                       {c}
@@ -58,8 +58,8 @@ export default async function EntryPage({
             )}
             {entry.companies.length > 0 && (
               <div>
-                <p className=" text-gray-400 mb-2 mt-12">COMPANIES</p>
-                <span className="flex flex-wrap gap-2">
+                <p className="text-gray-400 mb-1">COMPANIES</p>
+                <span className="flex flex-col gap-1">
                   {entry.companies.map((c) => (
                     <Link key={c} href={`/companies/${c}`}>
                       {c}
@@ -70,8 +70,8 @@ export default async function EntryPage({
             )}
             {entry.models.length > 0 && (
               <div>
-                <p className=" text-gray-400 mb-2 mt-12">MODELS</p>
-                <span className=" flex flex-wrap gap-2">
+                <p className="text-gray-400 mb-1">MODELS</p>
+                <span className="flex flex-col gap-1">
                   {entry.models.map((c) => (
                     <Link key={c} href={`/models/${c}`}>
                       {c}
@@ -82,24 +82,22 @@ export default async function EntryPage({
             )}
           </div>
         </div>
-        <div className="flex-1 w-full">
+        <div className="flex-1 w-full mt-12 lg:mt-0">
           <div
-            className="text-4xl text-black dark:text-white"
-            dangerouslySetInnerHTML={{ __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>") }}
+            className="text-xl lg:text-2xl text-black dark:text-white"
+            dangerouslySetInnerHTML={{
+              __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>"),
+            }}
           />
-        </div>
-      </div>
-      <div className="flex flex-col lg:flex-row items-start mt-24">
-        <div className="w-1/5 lg:w-1/6">
-        </div>
-        <div className="flex-1 w-full">
           <div>
             {relatedEntries.length > 0 && (
               <div className="flex gap-8 w-full mt-16">
                 <div className="lg:w-5/6">
-                  <div className="font-mono uppercase text-xl mb-8">See Also</div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {relatedEntries.slice(0, 3).map((e) => (
+                  <div className="font-mono uppercase lg:text-xl mb-6">
+                    See Also
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {relatedEntries.slice(0, 4).map((e) => (
                       <div key={e.slug}>
                         <EntryCard entry={e} withTopline={true} />
                       </div>
