@@ -2,6 +2,10 @@ import IndexPage from "@/components/IndexPage";
 import { getCompaniesByCount } from "@/lib/api";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Companies | Badness.ai"
+};
+
 export default function Companies() {
   const categoryByCount = getCompaniesByCount();
 

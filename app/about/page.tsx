@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "About | Badness.ai"
+};
+
 export default function About() {
   return (
     <main>

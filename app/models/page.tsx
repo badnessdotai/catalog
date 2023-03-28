@@ -2,6 +2,10 @@ import IndexPage from "@/components/IndexPage";
 import { getModelsByCount } from "@/lib/api";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Models | Badness.ai"
+};
+
 export default function Models() {
   const categoryByCount = getModelsByCount();
 

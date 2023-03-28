@@ -24,6 +24,18 @@ export default function Categories({ params }: { params: { name: string } }) {
   );
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { name: string };
+}) {
+  // https://beta.nextjs.org/docs/api-reference/metadata
+
+  const { name } = params;
+
+  return { title: name + " | Badness.ai" };
+}
+
 export async function generateStaticParams() {
   const entries = getCategoriesByCount();
 
