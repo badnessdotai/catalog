@@ -80,6 +80,12 @@ export default async function EntryPage({
                 </span>
               </div>
             )}
+            <div>
+              <p className="text-gray-400 mb-1">EXPERIMENTAL</p>
+              <span className="flex flex-col gap-1">
+                {entry.experimental}
+              </span>
+            </div>
           </div>
         </div>
         <div className="flex-1 w-full mt-12 lg:mt-0">
