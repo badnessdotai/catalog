@@ -86,6 +86,18 @@ export default async function EntryPage({
                 {entry.experimental}
               </span>
             </div>
+            {entry.sources.length > 0 && (
+              <div>
+                <p className="text-gray-400 mb-1">SOURCES</p>
+                <span className="flex flex-col gap-1">
+                  {entry.sources.map((source, i) => (
+                    <a key={i} href={source}>
+                      Source #{i + 1}
+                    </a>
+                  ))}
+                </span>
+              </div>
+            )}
           </div>
         </div>
         <div className="flex-1 w-full mt-12 lg:mt-0">
