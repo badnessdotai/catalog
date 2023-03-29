@@ -26,6 +26,11 @@ export default function EntryCard({
           })}
         </span>
         &nbsp;/&nbsp;
+        {entry.experimental === "Yes" && (
+          <span>
+            EXP&nbsp;/&nbsp;
+          </span>
+        )}
         {categoryString}
       </p>
     </Link>
