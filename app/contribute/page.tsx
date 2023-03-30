@@ -64,7 +64,12 @@ export default function About() {
               To add a new incident to the catalog, please do so using a GitHub
               pull request. Incidents of harm are stored in the{" "}
               <code>catalog/</code> directory; simply add a new file there. You
-              can use the existing incidents as a reference.
+              can use the existing incidents as a reference. Titles should be a single
+              full sentence, and descriptions should be about four full sentences split
+              into paragraphs as needed. Please use active voice whenever possible in
+              your incident titles and descriptions, and maintain consistency with the
+              verb tense (incidents that happened in the past should use past tense, and
+              ongoing incidents should use present tense).
             </p>
             <p>
               All contributions to the project are subject to review by the
