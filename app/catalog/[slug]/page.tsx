@@ -119,13 +119,13 @@ export default async function EntryPage({
           />
           {entry.experimental && (
             <div
-              className="bg-gray-200 border-t-4 border-gray-500 rounded-b text-gray-900 px-4 py-3 shadow-md mt-16"
+              className="border-2 border-t-8 border-black dark:border-white rounded-b text-black dark:text-white px-4 py-3 mt-16"
               role="alert"
             >
               <div className="flex">
                 <div className="py-1">
                   <svg
-                    className="fill-current h-6 w-6 text-gray-500 mr-4"
+                    className="fill-current h-6 w-6 text-black dark:text-white mr-4"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >
