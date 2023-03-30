@@ -90,11 +90,15 @@ export default async function EntryPage({
               <div>
                 <p className="text-gray-400 mb-1">SOURCES</p>
                 <span className="flex flex-col gap-1">
-                  {entry.sources.map((source, i) => (
-                    <a key={i} href={source}>
-                      Source #{i + 1}
-                    </a>
-                  ))}
+                  {entry.sources.map((c) => {
+                    const url = new URL(c);
+                    const hostname = url.hostname.startsWith("www.") ? url.hostname.slice(4) : url.hostname;
+                    return (
+                      <a key={c} href={url.href}>
+                        {`${hostname} ↗`}
+                      </a>
+                    );
+                  })}
                 </span>
               </div>
             )}
