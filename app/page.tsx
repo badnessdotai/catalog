@@ -23,11 +23,11 @@ export default function Home() {
       <section className="flex h-[85vh] justify-between gap-8">
         <article className="flex flex-col gap-8 justify-end lg:max-w-5xl">
           <h1 className="text-6xl lg:text-8xl font-serif">
-            An open, collaborative catalog of AI badness
+            An open, collaborative catalog of generative AI badness
           </h1>
           <p className="text-2xl lg:text-3xl font-sans">
             To build safer and more responsible AI systems, we must learn from
-            the mistakes of the past. Badness.ai is a curated catalog of AI
+            the mistakes of the past. Badness.ai is a curated catalog of generative AI
             systems causing real-world harm.
           </p>
           <p className="text-xl font-mono uppercase flex gap-8 items-center">
