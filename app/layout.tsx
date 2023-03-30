@@ -1,7 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
 import Fonts from "../components/Fonts";
-import Head from "next/head";
 
 export const metadata = {
   title: "Catalog of generative AI harms | Badness.ai",

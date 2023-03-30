@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Contribute | Badness.ai"
+  title: "Contribute | Badness.ai",
 };
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
         <article className="flex flex-col gap-8 justify-end max-w-5xl">
           <h1 className="text-6xl lg:text-9xl font-serif">Contribute</h1>
           <p className="text-xl lg:text-4xl font-sans">
-            There's tons of work to do. Here's how you can help.
+            There&apos;s tons of work to do. Here&apos;s how you can help.
           </p>
           <div className="prose lg:prose-2xl dark:prose-invert text-black dark:text-white prose-headings:font-serif prose-headings:font-normal">
             <p>
@@ -40,7 +40,7 @@ export default function About() {
                 positive impacts of AI, both now and in the future. We simply
                 believe that the best way to build safer and more responsible AI
                 systems is to learn from the mistakes of the past. This site is
-                not "anti-AI" &mdash; not by a long shot.
+                not &quot;anti-AI&quot; &mdash; not by a long shot.
               </li>
               <li>
                 <strong>Reliability</strong> &mdash; Our project relies on
@@ -64,12 +64,13 @@ export default function About() {
               To add a new incident to the catalog, please do so using a GitHub
               pull request. Incidents of harm are stored in the{" "}
               <code>catalog/</code> directory; simply add a new file there. You
-              can use the existing incidents as a reference. Titles should be a single
-              full sentence, and descriptions should be about four full sentences split
-              into paragraphs as needed. Please use active voice whenever possible in
-              your incident titles and descriptions, and maintain consistency with the
-              verb tense (incidents that happened in the past should use past tense, and
-              ongoing incidents should use present tense).
+              can use the existing incidents as a reference. Titles should be a
+              single full sentence, and descriptions should be about four full
+              sentences split into paragraphs as needed. Please use active voice
+              whenever possible in your incident titles and descriptions, and
+              maintain consistency with the verb tense (incidents that happened
+              in the past should use past tense, and ongoing incidents should
+              use present tense).
             </p>
             <p>
               All contributions to the project are subject to review by the
