@@ -1,5 +1,5 @@
 ---
-title: Sexually explicit deepfake targets investigative journalist Rana Ayyub
+title: Sexually explicit deepfake targeted investigative journalist Rana Ayyub
 companies: []
 categories: ["Deepfakes", "Harassment"]
 experimental: false
