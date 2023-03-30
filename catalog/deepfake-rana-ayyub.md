@@ -2,7 +2,7 @@
 title: Sexually explicit deepfake targets investigative journalist Rana Ayyub
 companies: []
 categories: ["Deepfakes", "Harassment"]
-experimental: "No"
+experimental: false
 modalities: ["Video Synthesis"]
 models: []
 date: 2018-11-21
