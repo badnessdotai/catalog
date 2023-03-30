@@ -23,12 +23,12 @@ export default function Home() {
       <section className="flex h-[85vh] justify-between gap-8">
         <article className="flex flex-col gap-8 justify-end lg:max-w-5xl">
           <h1 className="text-6xl lg:text-8xl font-serif">
-            An open, collaborative catalog of generative AI badness
+            An open catalog of generative AI badness
           </h1>
           <p className="text-2xl lg:text-3xl font-sans">
             To build safer and more responsible AI systems, we must learn from
-            the mistakes of the past. Badness.ai is a curated catalog of generative AI
-            systems causing real-world harm.
+            the mistakes of the past. Badness.ai is a curated catalog of
+            generative AI systems causing real-world harm.
           </p>
           <p className="text-xl font-mono uppercase flex gap-8 items-center">
             <Link
@@ -45,17 +45,6 @@ export default function Home() {
             <EntryCard key={entry.slug} entry={entry} withTopline={true} />
           ))}
         </article>
-      </section>
-      <section className="mt-32 flex flex-col gap-8 pt-8">
-        <div className="flex items-center gap-12">
-          <h2 className="font-serif text-4xl inline">Latest</h2>
-          <hr className="grow" />
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-          {entries.slice(0, 32).map((entry) => (
-            <EntryCard key={entry.slug} entry={entry} withTopline={false} />
-          ))}
-        </div>
       </section>
       <section className="mt-32 flex flex-col gap-8 pt-8">
         <div className="flex items-center gap-12">
@@ -124,6 +113,17 @@ export default function Home() {
               <span>More &rarr;</span>
             </Link>
           </div>
+        </div>
+      </section>
+      <section className="mt-32 flex flex-col gap-8 pt-8">
+        <div className="flex items-center gap-12">
+          <h2 className="font-serif text-4xl inline">Latest</h2>
+          <hr className="grow" />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+          {entries.slice(0, 32).map((entry) => (
+            <EntryCard key={entry.slug} entry={entry} withTopline={false} />
+          ))}
         </div>
       </section>
     </main>

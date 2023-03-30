@@ -41,7 +41,7 @@ export default async function EntryPage({
           {entry.title}
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row items-start mt-12 lg:mt-24">
+      <div className="flex flex-col lg:flex-row items-start mt-12 lg:mt-24 gap-12">
         <div className="lg:w-1/6">
           <div className="font-mono lg:text-xl truncate uppercase flex flex-wrap lg:flex-col gap-12">
             {entry.categories.length > 0 && (
@@ -89,14 +89,18 @@ export default async function EntryPage({
             {entry.sources.length > 0 && (
               <div>
                 <p className="text-gray-400 mb-1">SOURCES</p>
-                <span className="flex flex-col gap-1">
+                <span className="flex flex-col gap-1 truncate">
                   {entry.sources.map((c) => {
                     const url = new URL(c);
                     const hostname = url.hostname.startsWith("www.")
                       ? url.hostname.slice(4)
                       : url.hostname;
                     return (
-                      <a key={c} href={url.href}>
+                      <a
+                        key={c}
+                        href={url.href}
+                        className="block max-w-full truncate"
+                      >
                         {`${hostname} ↗`}
                       </a>
                     );
