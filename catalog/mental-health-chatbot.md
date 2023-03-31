@@ -1,5 +1,5 @@
 ---
-title: A mental health nonprofit called Koko released an AI chatbot for mental health counseling, but some users didn’t realize they were talking to a bot
+title: Koko, a mental health nonprofit, released an AI chatbot for mental health counseling, but some users didn’t realize they were talking to a bot
 companies: ["Koko"]
 categories: ["Deception"]
 experimental: false
