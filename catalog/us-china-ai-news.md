@@ -1,5 +1,5 @@
 ---
-title: Bots attempted to distribute AI-generated videos of news anchors criticizing the US and praising China
+title: Fake persona accounts attempted to distribute AI-generated videos of news anchors criticizing the US and praising China
 companies: ["Graphika", "Synthesia"]
 categories: ["Mis/disinformation", "Deepfakes"]
 experimental: false
