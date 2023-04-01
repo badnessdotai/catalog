@@ -1,5 +1,5 @@
 ---
-title: Snapchat’s MyAI gives user it believes to be 13 advice on how to lose virginity to an older man and lie to parents
+title: Snapchat’s MyAI gave user it believed to be 13 advice on how to lose virginity to an older man and lie to parents
 companies: ["Snapchat"]
 categories: ["Child Safety"]
 experimental: true
