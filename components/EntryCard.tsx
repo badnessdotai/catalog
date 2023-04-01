@@ -25,8 +25,8 @@ export default function EntryCard({
             year: "numeric",
           })}
         </span>
-        &nbsp;/&nbsp;
-        {entry.experimental && <span>EXP&nbsp;/&nbsp;</span>}
+        &nbsp;-&nbsp;
+        {entry.experimental && <span>EXP&nbsp;-&nbsp;</span>}
         {categoryString}
       </p>
     </Link>

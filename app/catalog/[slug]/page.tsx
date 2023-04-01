@@ -96,11 +96,7 @@ export default async function EntryPage({
                       ? url.hostname.slice(4)
                       : url.hostname;
                     return (
-                      <a
-                        key={c}
-                        href={url.href}
-                        className="block max-w-full"
-                      >
+                      <a key={c} href={url.href} className="block max-w-full">
                         {`${hostname} ↗`}
                       </a>
                     );
@@ -147,18 +143,16 @@ export default async function EntryPage({
           )}
           <div>
             {relatedEntries.length > 0 && (
-              <div className="flex gap-8 w-full mt-16">
-                <div className="lg:w-5/6">
-                  <div className="font-mono uppercase lg:text-xl mb-6">
-                    See Also
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {relatedEntries.slice(0, 4).map((e) => (
-                      <div key={e.slug}>
-                        <EntryCard entry={e} withTopline={true} />
-                      </div>
-                    ))}
-                  </div>
+              <div className="w-full mt-16">
+                <div className="font-mono uppercase lg:text-xl mb-8">
+                  See Also
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+                  {relatedEntries.slice(0, 4).map((e) => (
+                    <div key={e.slug}>
+                      <EntryCard entry={e} withTopline={true} />
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
