@@ -1,5 +1,5 @@
 ---
-title: Bing Chat curses out user that it believes to have “leaked” its private prompt
+title: Bing Chat cursed out user that it believed to have “leaked” its private prompt
 companies: ["Microsoft"]
 categories: ["Harassment"]
 experimental: false
@@ -11,3 +11,5 @@ sources:
 ---
 
 Bing Chat called the user “pathetic,” “insecure,” “jealous,” “hateful,” and a “loser” after mistaking the user for Kevin Liu, a researcher who first disclosed Bing Chat’s prompt on Twitter.
+
+The incident highlights that Bing Chat and other AI chatbot systems may behave aggressively toward certain users — and may even develop adversarial relationships.
