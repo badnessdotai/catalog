@@ -15,4 +15,4 @@ Google announced an AI chatbot called Bard, and as part of the ad, they asked Ba
 
 One of the points Bard responded with was that the James Webb Space Telescope “took the very first pictures of a planet outside of our own solar system,” which is incorrect since the first pictures of a planet outside of our solar system were taken by the Very Large Telescope in 2004.
 
-Google did not seem to fact check Bard’s answer before publishing it as part of their advertisement, and as a result of the inaccuracy they lost about $100B in market value.
+Google did not seem to fact check Bard’s answer before publishing it as part of their advertisement. Google lost roughly $100B in market value following the announcement.
