@@ -11,6 +11,6 @@ sources:
   - "https://twitter.com/LaurynIpsum/status/1599953586699767808"
 ---
 
-An illustrator posted several pieces of AI-generated artwork from Lensa AI that include a mangled signature. She believed these to be the remains of an artist that the AI stole from.
+An illustrator posted several pieces of AI-generated artwork from Lensa AI that include a mangled signature. She argued these signatures demonstrate how Lensa is stealing artists’ works. Note that none of the signatures identified an individual artist.
 
 The CEO of Lensa AI’s parent company said that neural networks may mimic styles but do not combine images.
