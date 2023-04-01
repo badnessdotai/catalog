@@ -1,7 +1,7 @@
 ---
 title: The voices of celebrities including Joe Rogan and Emma Watson were impersonated to generate racist, transphobic, and violent comments
 companies: ["ElevenLabs"]
-categories: ["Deepfakes, Misrepresentation"]
+categories: ["Deepfakes", "Misrepresentation"]
 experimental: false
 modalities: ["Audio Synthesis"]
 models: []
