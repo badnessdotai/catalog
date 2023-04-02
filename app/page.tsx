@@ -124,6 +124,11 @@ export default function Home() {
           {entries.slice(0, 32).map((entry) => (
             <EntryCard key={entry.slug} entry={entry} withTopline={false} />
           ))}
+          <div key={"more"} className="font-mono uppercase text-2xl mb-8">
+            <Link href={`/catalog`}>
+              <span>View full catalog &rarr;</span>
+            </Link>
+          </div>
         </div>
       </section>
     </main>
