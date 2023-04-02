@@ -101,7 +101,7 @@ export default function Home() {
           {modelsByCount.map((c) => {
             return (
               <div key={c.model} className="font-mono uppercase text-2xl">
-                <Link href={`/companies/${encodeURIComponent(c.model)}`}>
+                <Link href={`/models/${encodeURIComponent(c.model)}`}>
                   <span>{c.model}</span>
                   <span className="ml-4 opacity-50">{c.count}</span>
                 </Link>
