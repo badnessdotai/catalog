@@ -133,9 +133,9 @@ export default async function EntryPage({
                     The example above is experimental.
                   </p>
                   <p className="text-sm">
-                    This means it was produced to demonstrate a real-world harm;
-                    although no actual harm was caused in this setting, the
-                    example exhibits a potential risk.
+                    It was produced to demonstrate a real-world harm; although
+                    no actual harm was caused in this setting, the example
+                    exhibits a potential risk.
                   </p>
                 </div>
               </div>
