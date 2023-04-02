@@ -79,7 +79,7 @@ export default function About() {
               the project, please feel free to reach out to us via GitHub or
               email.
             </p>
-            <h2>Contribution Guideliens</h2>
+            <h2>Contribution Guidelines</h2>
             <p>
               We expect all contributors to follow our{" "}
               <a href="https://github.com/badnessdotorg/catalog/blob/main/CODE_OF_CONDUCT.md">
