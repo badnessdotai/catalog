@@ -15,4 +15,4 @@ ChatGPT users asked the chatbot how to program a “reverse phone number lookup�
 
 The company writes that reverse phone number lookup “is not a service we have ever provided, nor a service we have any plans to provide. Indeed, it is a not a service we are technically capable of providing.”
 
-Users then submitted support requests asking why OpenCage’s product was “broken.” This high customer dissatisfaction has the potential to damage OpenCage’s brand reputation.
+Users then submitted support requests asking why OpenCage’s product was “broken.” Customer dissatisfaction as a result of this incident has the potential to damage OpenCage’s brand reputation.
