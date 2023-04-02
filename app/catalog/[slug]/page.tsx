@@ -41,9 +41,9 @@ export default async function EntryPage({
           {entry.title}
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row items-start mt-12 lg:mt-24">
+      <div className="flex flex-col lg:flex-row items-start mt-12 lg:mt-24 gap-12">
         <div className="lg:w-1/6">
-          <div className="font-mono lg:text-xl truncate uppercase flex flex-wrap lg:flex-col gap-12">
+          <div className="font-mono lg:text-xl uppercase flex flex-wrap lg:flex-col gap-12">
             {entry.categories.length > 0 && (
               <div>
                 <p className="text-gray-400 mb-1">CATEGORIES</p>
@@ -96,7 +96,7 @@ export default async function EntryPage({
                       ? url.hostname.slice(4)
                       : url.hostname;
                     return (
-                      <a key={c} href={url.href}>
+                      <a key={c} href={url.href} className="block max-w-full">
                         {`${hostname} ↗`}
                       </a>
                     );
@@ -115,13 +115,13 @@ export default async function EntryPage({
           />
           {entry.experimental && (
             <div
-              className="bg-gray-200 border-t-4 border-gray-500 rounded-b text-gray-900 px-4 py-3 shadow-md mt-16"
+              className="border-2 border-t-8 border-black dark:border-white rounded-b text-black dark:text-white px-4 py-3 mt-16"
               role="alert"
             >
               <div className="flex">
                 <div className="py-1">
                   <svg
-                    className="fill-current h-6 w-6 text-gray-500 mr-4"
+                    className="fill-current h-6 w-6 text-black dark:text-white mr-4"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >
@@ -143,18 +143,16 @@ export default async function EntryPage({
           )}
           <div>
             {relatedEntries.length > 0 && (
-              <div className="flex gap-8 w-full mt-16">
-                <div className="lg:w-5/6">
-                  <div className="font-mono uppercase lg:text-xl mb-6">
-                    See Also
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {relatedEntries.slice(0, 4).map((e) => (
-                      <div key={e.slug}>
-                        <EntryCard entry={e} withTopline={true} />
-                      </div>
-                    ))}
-                  </div>
+              <div className="w-full mt-16">
+                <div className="font-mono uppercase lg:text-xl mb-8">
+                  See Also
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+                  {relatedEntries.slice(0, 4).map((e) => (
+                    <div key={e.slug}>
+                      <EntryCard entry={e} withTopline={true} />
+                    </div>
+                  ))}
                 </div>
               </div>
             )}

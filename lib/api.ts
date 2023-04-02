@@ -70,7 +70,7 @@ export function getCategoryDescription(categoryName: string) {
     case 'IP Theft':
       return 'Unauthorized use or theft of intellectual property, including patents, copyrights, or trade secrets, often for the purpose of financial gain.'
     default:
-      return 'This category is yet to be defined.';
+      return '';
   }
 }
 
