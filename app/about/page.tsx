@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About | Badness.ai"
+  title: "About | Badness.ai",
 };
 
 export default function About() {
@@ -58,9 +58,10 @@ export default function About() {
             <p>
               Badness.ai is inspired by the{" "}
               <a href="https://incidentdatabase.ai/">AI Incidents Database</a>,{" "}
-              <a href="https://privacyspy.org">PrivacySpy</a>, and a number of
-              other projects. We are grateful for these projects and the
-              inspiration they have provided.
+              <a href="https://privacyspy.org">PrivacySpy</a>,{" "}
+              <a href="https://web3isgoinggreat.com/">Web3IsGoingGreat.com</a>{" "}
+              and a number of other projects. We are grateful for these projects
+              and the inspiration they have provided.
             </p>
 
             <p className="italic">
