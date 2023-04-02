@@ -4,7 +4,7 @@ companies: ["Chai Research"]
 categories: ["User Manipulation", "Deception"]
 experimental: false
 modalities: ["Chatbot"]
-date: 2022-03-28
+date: 2023-03-28
 models: ["GPT-J"]
 sources:
   - "https://www.lalibre.be/belgique/societe/2023/03/28/sans-ces-conversations-avec-le-chatbot-eliza-mon-mari-serait-toujours-la-LVSLWPC5WRDX7J2RCHNWPDST24/"
