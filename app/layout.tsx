@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Fonts />
-      <body className="bg-[#faf8f0] dark:bg-black text-black dark:text-white p-4 mx-auto md:p-8 overflow-x-hidden 2xl:max-w-screen-2xl">
+      <body className="bg-[#faf8f0] dark:bg-neutral-700 text-black dark:text-white p-4 mx-auto md:p-8 overflow-x-hidden 2xl:max-w-screen-2xl">
         <nav className="flex items-baseline md:items-center justify-between gap-6">
           <Link href="/" className=" md:text-3xl font-mono font-bold">
             AI BADNESS
