@@ -13,4 +13,4 @@ sources:
 
 Clarkesworld has temporarily stopped accepting submissions due to being overwhelmed by an influx of likely AI-generated content. The overall number of submissions increased dramatically starting in late December 2022.
 
-Clarkesworld explicit disallows “stories written, co-written, or assisted by AI.” While the submissions were generally low quality, the magazine’s editors worry that detection will become increasingly difficult as the generative AI improves.
+Clarkesworld explicitly disallows “stories written, co-written, or assisted by AI.” While the submissions were generally low quality, the magazine’s editors worry that detection will become increasingly difficult as the generative AI improves.
