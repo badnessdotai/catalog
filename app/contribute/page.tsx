@@ -20,6 +20,16 @@ export default function About() {
               you. This page lays out the values of our project, various ways
               you can contribute, and guidelines for our content.
             </p>
+            <p>
+              Badness.ai is an open source project, and we encourage you to
+              contribute. You can find the source code on{" "}
+              <a href="https://github.com/badnessdotai/catalo">GitHub</a>. This
+              project is licensed under the{" "}
+              <a href="https://github.com/badnessdotai/catalog/blob/main/LICENSE">
+                Apache 2.0 license
+              </a>
+              .
+            </p>
             <h2>Our Values</h2>
             <p>Our project is guided by the following values:</p>
             <ol>
@@ -55,10 +65,11 @@ export default function About() {
             <p>
               If you have a suggestion, found an issue, or want to share an
               idea, please feel free to{" "}
-              <a href="https://github.com/badnessdotorg/catalog/issues">
+              <a href="https://github.com/badnessdotai/catalog/issues">
                 create a GitHub issue
               </a>{" "}
-              on our repository.
+              on our{" "}
+              <a href="https://github.com/badnessdotai/catalog">repository</a>.
             </p>
             <p>
               To add a new incident to the catalog, please do so using a GitHub
