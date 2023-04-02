@@ -5,7 +5,7 @@ import {
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Link from "next/link";
 import EntryCard from "@/components/EntryCard";
-import Head from "next/head";
+import { notFound } from "next/navigation";
 
 export default async function EntryPage({
   params,
@@ -15,6 +15,11 @@ export default async function EntryPage({
   const { slug } = params;
 
   const entry = getEntryBySlug(slug);
+
+  if (entry === null) {
+    notFound();
+  }
+
   const renderedMarkdown = await markdownToHtml(entry.content || "");
 
   const relatedEntries = getAllEntries()
@@ -173,7 +178,7 @@ export async function generateMetadata({
   const { slug } = params;
   const entry = getEntryBySlug(slug);
 
-  return { title: entry.title + " | Badness.ai" };
+  return { title: entry?.title + " | Badness.ai" };
 }
 
 export async function generateStaticParams() {

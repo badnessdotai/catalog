@@ -9,9 +9,15 @@ export function getPostSlugs() {
   return fs.readdirSync(contentDirectory)
 }
 
-export function getPostBySlug(slug: string): EntryType {
+export function getPostBySlug(slug: string): EntryType | null {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(contentDirectory, `${realSlug}.md`)
+
+  // Verify the file exists before trying to read it
+  if (!fs.existsSync(fullPath)) {
+    return null
+  }
+
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
@@ -26,10 +32,10 @@ export function getPostBySlug(slug: string): EntryType {
   return entry as EntryType
 }
 
-export function getAllEntries() {
+export function getAllEntries(): EntryType[] {
   const slugs = getPostSlugs()
   const posts = slugs
-    .map((slug) => getPostBySlug(slug))
+    .map((slug) => getPostBySlug(slug)!)
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts

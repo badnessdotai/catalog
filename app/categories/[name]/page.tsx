@@ -5,7 +5,7 @@ import {
   getCategoryDescription,
   getCategoriesByCount,
 } from "@/lib/api";
-import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function Categories({ params }: { params: { name: string } }) {
   const { name } = params;
@@ -18,6 +18,10 @@ export default function Categories({ params }: { params: { name: string } }) {
   const entries = getAllEntries().filter((e) =>
     e.categories.includes(decodedName)
   );
+
+  if (entries.length === 0) {
+    notFound();
+  }
 
   return (
     <IndexPage

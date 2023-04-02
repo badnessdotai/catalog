@@ -1,7 +1,7 @@
 import EntryCard from "@/components/EntryCard";
 import IndexPage from "@/components/IndexPage";
 import { getAllEntries, getModelsByCount } from "@/lib/api";
-import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function Categories({ params }: { params: { name: string } }) {
   const { name } = params;
@@ -10,6 +10,10 @@ export default function Categories({ params }: { params: { name: string } }) {
   const decodedName = decodeURIComponent(name);
 
   const entries = getAllEntries().filter((e) => e.models.includes(decodedName));
+
+  if (entries.length === 0) {
+    notFound();
+  }
 
   return (
     <IndexPage title={decodedName} category="Model">

@@ -1,7 +1,7 @@
 import EntryCard from "@/components/EntryCard";
 import IndexPage from "@/components/IndexPage";
 import { getAllEntries, getCompaniesByCount } from "@/lib/api";
-import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function Categories({ params }: { params: { name: string } }) {
   const { name } = params;
@@ -13,10 +13,14 @@ export default function Categories({ params }: { params: { name: string } }) {
     e.companies.includes(decodedName)
   );
 
+  if (entries.length === 0) {
+    notFound();
+  }
+
   return (
     <IndexPage title={decodedName} category="Company">
       {entries.map((c) => {
-        return <EntryCard key={c.slug} entry={c} withTopline={true} />;
+        return <EntryCard key={c!.slug} entry={c!} withTopline={true} />;
       })}
     </IndexPage>
   );
