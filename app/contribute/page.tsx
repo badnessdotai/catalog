@@ -23,7 +23,7 @@ export default function About() {
             <p>
               Badness.ai is an open source project, and we encourage you to
               contribute. You can find the source code on{" "}
-              <a href="https://github.com/badnessdotai/catalo">GitHub</a>. This
+              <a href="https://github.com/badnessdotai/catalog">GitHub</a>. This
               project is licensed under the{" "}
               <a href="https://github.com/badnessdotai/catalog/blob/main/LICENSE">
                 Apache 2.0 license
