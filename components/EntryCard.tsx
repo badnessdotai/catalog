@@ -13,7 +13,7 @@ export default function EntryCard({
   return (
     <Link
       className="flex flex-col gap-2 hover:rotate-0 transition-all"
-      href={`/catalog/${entry.slug}`}
+      href={`/catalog/${encodeURIComponent(entry.slug)}`}
     >
       {withTopline !== false && <hr />}
       <h3 className="font-sans text-xl">{entry.title}</h3>

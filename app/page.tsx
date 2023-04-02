@@ -55,7 +55,7 @@ export default function Home() {
           {categoryByCount.map((c) => {
             return (
               <div key={c.category} className="font-mono uppercase text-2xl">
-                <Link href={`/categories/${c.category}`}>
+                <Link href={`/categories/${encodeURIComponent(c.category)}`}>
                   <span>{c.category}</span>
                   <span className="ml-4 opacity-50">{c.count}</span>
                 </Link>
@@ -78,7 +78,7 @@ export default function Home() {
           {companiesByCount.map((c) => {
             return (
               <div key={c.company} className="font-mono uppercase text-2xl">
-                <Link href={`/companies/${c.company}`}>
+                <Link href={`/companies/${encodeURIComponent(c.company)}`}>
                   <span>{c.company}</span>
                   <span className="ml-4 opacity-50">{c.count}</span>
                 </Link>
@@ -101,7 +101,7 @@ export default function Home() {
           {modelsByCount.map((c) => {
             return (
               <div key={c.model} className="font-mono uppercase text-2xl">
-                <Link href={`/companies/${c.model}`}>
+                <Link href={`/companies/${encodeURIComponent(c.model)}`}>
                   <span>{c.model}</span>
                   <span className="ml-4 opacity-50">{c.count}</span>
                 </Link>

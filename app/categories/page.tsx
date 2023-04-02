@@ -3,7 +3,7 @@ import { getAllEntries, getCategoriesByCount } from "@/lib/api";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Categories | Badness.ai"
+  title: "Categories | Badness.ai",
 };
 
 export default function Categories() {
@@ -14,7 +14,7 @@ export default function Categories() {
       {categoryByCount.map((c) => {
         return (
           <div key={c.category} className="font-mono uppercase text-4xl">
-            <Link href={`/categories/${c.category}`}>
+            <Link href={`/categories/${encodeURIComponent(c.category)}`}>
               <span>{c.category}</span>
               <span className="ml-4 opacity-50">{c.count}</span>
             </Link>

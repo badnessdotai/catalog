@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   const { name } = params;
 
-  return { title: name + " | Badness.ai" };
+  return { title: decodeURIComponent(name) + " | Badness.ai" };
 }
 
 export async function generateStaticParams() {

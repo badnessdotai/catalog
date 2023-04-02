@@ -49,7 +49,7 @@ export default async function EntryPage({
                 <p className="text-gray-400 mb-1">CATEGORIES</p>
                 <span className="flex flex-col gap-1">
                   {entry.categories.map((c) => (
-                    <Link key={c} href={`/categories/${c}`}>
+                    <Link key={c} href={`/categories/${encodeURIComponent(c)}`}>
                       {c}
                     </Link>
                   ))}
@@ -61,7 +61,7 @@ export default async function EntryPage({
                 <p className="text-gray-400 mb-1">COMPANIES</p>
                 <span className="flex flex-col gap-1">
                   {entry.companies.map((c) => (
-                    <Link key={c} href={`/companies/${c}`}>
+                    <Link key={c} href={`/companies/${encodeURIComponent(c)}`}>
                       {c}
                     </Link>
                   ))}
@@ -73,7 +73,7 @@ export default async function EntryPage({
                 <p className="text-gray-400 mb-1">MODELS</p>
                 <span className="flex flex-col gap-1">
                   {entry.models.map((c) => (
-                    <Link key={c} href={`/models/${c}`}>
+                    <Link key={c} href={`/models/${encodeURIComponent(c)}`}>
                       {c}
                     </Link>
                   ))}
