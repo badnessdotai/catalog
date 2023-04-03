@@ -2,7 +2,7 @@
 title: Google advertisement featured Bard giving an incorrect answer to a question about space, something the company seemingly forgot to fact-check
 companies: ["Google"]
 categories: ["Inaccuracies", "Overreliance"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 models: ["LaMDA"]
 date: 2023-02-08

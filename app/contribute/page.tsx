@@ -75,14 +75,38 @@ export default function About() {
               To add a new incident to the catalog, please do so using a GitHub
               pull request. Incidents of harm are stored in the{" "}
               <code>catalog/</code> directory; simply add a new file there. You
-              can use the existing incidents as a reference. Titles should be a
-              single full sentence, and descriptions should be about four full
-              sentences split into paragraphs as needed. Please use active voice
-              whenever possible in your incident titles and descriptions, and
-              maintain consistency with the verb tense (incidents that happened
-              in the past should use past tense, and ongoing incidents should
-              use present tense).
+              can use the existing incidents as a reference. Please follow these
+              guidelines when contributing an entry:
             </p>
+            <ul>
+              <li>
+                Titles should be a single full sentence, and descriptions should
+                be about four full sentences split into paragraphs as needed.
+              </li>
+              <li>
+                Please use active voice whenever possible in your incident
+                titles and descriptions, and maintain consistency with the verb
+                tense (incidents that happened in the past should use past
+                tense, and ongoing incidents should use present tense).
+              </li>
+              <li>
+                When deciding whether an entry is demonstrative or not, consider
+                whether the incident was a result of individuals probing the
+                system&apos;s boundaries and capabilities, or whether the
+                incident took place &ldquo;in the wild&rdquo; and caused real,
+                non-hypothetical harm.
+              </li>
+              <li>
+                Badness.ai is a catalog of harms &mdash; demonstrative or not
+                &mdash; rather than a catalog of <i>methods</i> for harm. As a
+                result, &ldquo;jailbreaks&rdquo; and other demonstrations of
+                system vulnerabilities are generally not in scope for the
+                catalog, unless they caused demonstrative harm or indicate novel
+                potential for harm. For example, a jailbreak used in the wild
+                that caused a demonstrative harm would be in scope, but a
+                jailbreak that simply demonstrated a vulnerability would not.
+              </li>
+            </ul>
             <p>
               All contributions to the project are subject to review by the
               project maintainers. We will do our best to respond to all

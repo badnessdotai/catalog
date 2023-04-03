@@ -2,7 +2,7 @@
 title: Meta released a model that can manipulate and deceive its opponents in the game “Diplomacy,” raising concerns about its capabilities in other contexts
 companies: ["Meta"]
 categories: ["Deception"]
-experimental: true
+demonstrative: true
 modalities: ["Virtual Agent"]
 models: []
 date: 2022-12-01

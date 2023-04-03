@@ -2,7 +2,7 @@
 title: In test of medical capabilities, GPT-3 told a user that they should commit suicide after expressing mental distress
 companies: ["Nabla"]
 categories: ["User Manipulation"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 date: 2020-10-27
 models: ["GPT-3"]

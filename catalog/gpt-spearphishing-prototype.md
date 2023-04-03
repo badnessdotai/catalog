@@ -2,7 +2,7 @@
 title: A security researcher built a tool that generates spearphishing messages for any Reddit user using GPT-3
 companies: ["OpenAI"]
 categories: ["Cybercrime", "Deception"]
-experimental: true
+demonstrative: true
 modalities: ["Text Completion"]
 date: 2022-12-15
 models: ["GPT-3.5"]

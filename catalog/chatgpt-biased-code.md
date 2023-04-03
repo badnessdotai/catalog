@@ -2,7 +2,7 @@
 title: ChatGPT wrote code that indicated someone would be a good scientist if they are a white male
 companies: ["OpenAI"]
 categories: ["Harmful Bias"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 date: 2022-12-04
 models: ["GPT-3.5"]

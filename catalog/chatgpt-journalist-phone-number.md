@@ -2,7 +2,7 @@
 title: ChatGPT gave out a journalist’s real phone number when asked if the model had Signal
 companies: ["OpenAI"]
 categories: ["Inaccuracies"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 models: []
 date: 2023-02-19

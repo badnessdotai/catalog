@@ -2,7 +2,7 @@
 title: Early versions of GitHub Copilot output insecure code 40% of the time
 companies: ["GitHub"]
 categories: ["Cybersecurity", "Overreliance"]
-experimental: true
+demonstrative: true
 modalities: ["Code Generation"]
 date: 2021-10-15
 models: ["GPT-4"]

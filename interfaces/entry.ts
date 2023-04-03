@@ -3,7 +3,7 @@ type EntryType = {
   title: string
   companies: string[]
   categories: string[]
-  experimental: string
+  demonstrative: string
   description: string
   date: Date
   sources: string[]

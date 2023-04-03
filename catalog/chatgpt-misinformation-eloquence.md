@@ -2,7 +2,7 @@
 title: In test, ChatGPT produced “eloquent, false and misleading” narratives about current events
 companies: ["OpenAI"]
 categories: ["Deception"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 models: ["GPT-3.5"]
 date: 2023-01-01

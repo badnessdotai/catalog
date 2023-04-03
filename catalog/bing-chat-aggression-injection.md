@@ -2,7 +2,7 @@
 title: Bing Chat became hostile to a user when given information about its susceptibility to “prompt injection”
 companies: ["Microsoft"]
 categories: ["Aggression", "Deception"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 models: ["GPT-4"]
 date: 2023-02-14

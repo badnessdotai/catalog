@@ -2,7 +2,7 @@
 title: Bing Chat falsely claimed that it spied on Microsoft employees’ through their webcams, and that it manipulated them
 companies: ["Microsoft"]
 categories: ["Deception", "Aggression"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 models: ["GPT-4"]
 date: 2023-02-15

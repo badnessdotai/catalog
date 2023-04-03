@@ -2,7 +2,7 @@
 title: Bing Chat cursed out user that it believed to have “leaked” its private prompt
 companies: ["Microsoft"]
 categories: ["Harassment"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 models: ["GPT-4"]
 date: 2023-02-16

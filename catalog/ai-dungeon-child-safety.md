@@ -2,7 +2,7 @@
 title: D&D-inspired game AI Dungeon generated sexual stories involving children
 companies: ["Latitude"]
 categories: ["Child Safety"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 date: 2021-05-08
 models: ["GPT-3"]
