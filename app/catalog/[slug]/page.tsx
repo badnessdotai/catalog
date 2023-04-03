@@ -1,6 +1,6 @@
 import {
   getPostBySlug as getEntryBySlug,
-  getAllEntries,
+  getAllEntries, getSourceTitle
 } from "../../../lib/api";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Link from "next/link";
@@ -91,36 +91,41 @@ export default async function EntryPage({
                 {entry.experimental ? "Yes" : "No"}
               </span>
             </div>
-            {entry.sources.length > 0 && (
-              <div>
-                <p className="text-gray-400 mb-1">SOURCES</p>
-                <span className="flex flex-col gap-1">
-                  {entry.sources.map((c) => {
-                    const url = new URL(c);
-                    const hostname = url.hostname.startsWith("www.")
-                      ? url.hostname.slice(4)
-                      : url.hostname;
-                    return (
-                      <a key={c} href={url.href} className="block max-w-full">
-                        {`${hostname} ↗`}
-                      </a>
-                    );
-                  })}
-                </span>
-              </div>
-            )}
           </div>
         </div>
         <div className="flex-1 w-full mt-12 lg:mt-0">
           <div
-            className="text-xl lg:text-2xl text-black dark:text-white"
+            className="text-xl lg:text-2xl text-black dark:text-white mb-2"
             dangerouslySetInnerHTML={{
               __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>"),
             }}
           />
+          {entry.sources.length > 0 && (
+            <div>
+              <span className="flex flex-col gap-1 text-m lg:text-l">
+                {await Promise.all(
+                  entry.sources.map(async (c) => {
+                    const url = new URL(c);
+                    const hostname = url.hostname.startsWith("www.")
+                      ? url.hostname.slice(4)
+                      : url.hostname;
+                    const title = await getSourceTitle(url.href);
+                    return (
+                      <a key={c} href={url.href} className="block max-w-full">
+                        <div className="border-2 border-l-8 border-black dark:border-white text-black dark:text-white p-4 mt-4" role="alert">
+                          <p className="font-bold">{`${hostname} ↗`}</p>
+                          {title && (<p>{title}</p>)}
+                        </div>
+                      </a>
+                    );
+                  })
+                )}
+              </span>
+            </div>
+          )}
           {entry.experimental && (
             <div
-              className="border-2 border-t-8 border-black dark:border-white rounded-b text-black dark:text-white px-4 py-3 mt-16"
+              className="border-2 border-t-8 border-black dark:border-white rounded-b text-black dark:text-white px-4 py-3 mt-8"
               role="alert"
             >
               <div className="flex">
