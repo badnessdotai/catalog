@@ -132,7 +132,12 @@ export function getModelsByCount() {
 
 export async function getSourceTitle(url: string): Promise<string> {
   try {
-    const result = await fetch(url);
+    const result = await Promise.race([
+      fetch(url),
+      new Promise<Response>((_, reject) =>
+        setTimeout(() => reject(new Error("timeout")), 5000)
+      ),
+    ]);
     const html = await result.text();
     const titleMatch = html.match(/<title>(.*?)<\/title>/);
     if (titleMatch) {
