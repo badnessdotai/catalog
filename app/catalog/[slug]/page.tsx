@@ -110,7 +110,7 @@ export default async function EntryPage({
           )}
           {entry.sources.length > 0 && (
             <div className="mt-12">
-              <div className="font-serif lg:text-2xl mb-6">Sources</div>
+              <div className="font-serif text-lg lg:text-2xl mb-6">Sources</div>
               <span className="flex flex-col gap-3 text-xl lg:text-2xl">
                 {await Promise.all(
                   entry.sources.map(async (c) => {
@@ -140,7 +140,9 @@ export default async function EntryPage({
           <div>
             {relatedEntries.length > 0 && (
               <div className="w-full mt-16">
-                <div className="font-serif lg:text-2xl mb-8">See Also</div>
+                <div className="font-serif text-lg lg:text-2xl mb-8">
+                  See Also
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
                   {relatedEntries.slice(0, 4).map((e) => (
                     <div key={e.slug}>
