@@ -1,3 +1,5 @@
+import he from 'he'
+import fetch from 'node-fetch'
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
@@ -126,4 +128,21 @@ export function getModelsByCount() {
   });
 
   return modelsByCount.sort((a, b) => b.count - a.count);
+}
+
+export async function getSourceTitle(url: string): Promise<string> {
+  try {
+    const result = await fetch(url);
+    const html = await result.text();
+    const titleMatch = html.match(/<title>(.*?)<\/title>/);
+    if (titleMatch) {
+      const title = he.decode(titleMatch[1]);
+      return title;
+    } else {
+      return "";
+    }
+  } catch (err) {
+    console.error(`Error fetching title for ${url}: ${err}`);
+    return "";
+  }
 }
