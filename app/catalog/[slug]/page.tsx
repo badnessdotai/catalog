@@ -1,6 +1,7 @@
 import {
   getPostBySlug as getEntryBySlug,
   getAllEntries,
+  getSourceTitle,
 } from "../../../lib/api";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Link from "next/link";
@@ -91,67 +92,55 @@ export default async function EntryPage({
                 {entry.experimental ? "Yes" : "No"}
               </span>
             </div>
-            {entry.sources.length > 0 && (
-              <div>
-                <p className="text-gray-400 mb-1">SOURCES</p>
-                <span className="flex flex-col gap-1">
-                  {entry.sources.map((c) => {
-                    const url = new URL(c);
-                    const hostname = url.hostname.startsWith("www.")
-                      ? url.hostname.slice(4)
-                      : url.hostname;
-                    return (
-                      <a key={c} href={url.href} className="block max-w-full">
-                        {`${hostname} ↗`}
-                      </a>
-                    );
-                  })}
-                </span>
-              </div>
-            )}
           </div>
         </div>
         <div className="flex-1 w-full mt-12 lg:mt-0">
           <div
-            className="text-xl lg:text-2xl text-black dark:text-white"
+            className="text-xl lg:text-2xl text-black dark:text-white mb-2"
             dangerouslySetInnerHTML={{
               __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>"),
             }}
           />
           {entry.experimental && (
-            <div
-              className="border-2 border-t-8 border-black dark:border-white rounded-b text-black dark:text-white px-4 py-3 mt-16"
-              role="alert"
-            >
-              <div className="flex">
-                <div className="py-1">
-                  <svg
-                    className="fill-current h-6 w-6 text-black dark:text-white mr-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-bold">
-                    The example above is experimental.
-                  </p>
-                  <p className="text-sm">
-                    It was produced to demonstrate a real-world harm; although
-                    no actual harm was caused in this setting, the example
-                    exhibits a potential risk.
-                  </p>
-                </div>
-              </div>
+            <div className="text-xl lg:text-2xl text-black dark:text-white mb-2 mt-8">
+              <strong>This entry is experimental.</strong> It was produced to
+              demonstrate a real-world harm; although no actual harm was caused
+              in this setting, this entry exhibits a potential risk.
+            </div>
+          )}
+          {entry.sources.length > 0 && (
+            <div className="mt-12">
+              <div className="font-serif lg:text-2xl mb-6">Sources</div>
+              <span className="flex flex-col gap-3 text-xl lg:text-2xl">
+                {await Promise.all(
+                  entry.sources.map(async (c) => {
+                    const url = new URL(c);
+                    const hostname = url.hostname.startsWith("www.")
+                      ? url.hostname.slice(4)
+                      : url.hostname;
+                    const title = await getSourceTitle(url.href);
+                    return (
+                      <a key={c} href={url.href} className="block max-w-full">
+                        <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-baseline h-[1.1em]">
+                          <p className="font-mono text-lg lg:text-xl">
+                            {hostname.toLocaleUpperCase()}
+                            <span className="font-sans">&nbsp;&#8599;</span>
+                          </p>
+                          {title && (
+                            <p className="truncate ml-4 lg:ml-6">{title}</p>
+                          )}
+                        </div>
+                      </a>
+                    );
+                  })
+                )}
+              </span>
             </div>
           )}
           <div>
             {relatedEntries.length > 0 && (
               <div className="w-full mt-16">
-                <div className="font-mono uppercase lg:text-xl mb-8">
-                  See Also
-                </div>
+                <div className="font-serif lg:text-2xl mb-8">See Also</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
                   {relatedEntries.slice(0, 4).map((e) => (
                     <div key={e.slug}>
