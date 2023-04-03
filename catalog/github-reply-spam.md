@@ -2,7 +2,7 @@
 title: GitHub user replied to issues in popular repositories with low-quality AI generated content
 companies: ["GitHub"]
 categories: ["Volume/Spam", "Inaccuracies"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 date: 2022-12-27
 models: ["GPT-4"]

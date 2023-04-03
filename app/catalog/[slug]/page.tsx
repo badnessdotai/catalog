@@ -87,9 +87,9 @@ export default async function EntryPage({
               </div>
             )}
             <div>
-              <p className="text-gray-400 mb-1">EXPERIMENTAL</p>
+              <p className="text-gray-400 mb-1">DEMONSTRATIVE</p>
               <span className="flex flex-col gap-1">
-                {entry.experimental ? "Yes" : "No"}
+                {entry.demonstrative ? "Yes" : "No"}
               </span>
             </div>
           </div>
@@ -101,11 +101,12 @@ export default async function EntryPage({
               __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>"),
             }}
           />
-          {entry.experimental && (
+          {entry.demonstrative && (
             <div className="text-xl lg:text-2xl text-black dark:text-white mb-2 mt-8">
-              <strong>This entry is experimental.</strong> It was produced to
-              demonstrate a real-world harm; although no actual harm was caused
-              in this setting, this entry exhibits a potential risk.
+              <strong>This entry is demonstrative.</strong> It was produced in
+              an experimental environment to demonstrate a real-world harm;
+              although no actual harm was caused in this setting, this entry
+              exhibits a potential risk.
             </div>
           )}
           {entry.sources.length > 0 && (

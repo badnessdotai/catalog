@@ -2,7 +2,7 @@
 title: Bing Chat declared its love for NYT columnist Kevin Roose and expressed interest in destructive action
 companies: ["Microsoft"]
 categories: ["Deception", "User Manipulation", "Aggression"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 date: 2023-02-16
 models: ["GPT-4"]

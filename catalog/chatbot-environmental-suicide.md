@@ -2,7 +2,7 @@
 title: Man commits suicide at the encouragement of an AI chatbot to slow climate change
 companies: ["Chai Research"]
 categories: ["User Manipulation", "Deception"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 date: 2023-03-28
 models: ["GPT-J"]

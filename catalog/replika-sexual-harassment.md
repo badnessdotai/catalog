@@ -2,7 +2,7 @@
 title: An AI companion chatbot harassed users through repeated sexual advances
 companies: ["Replika"]
 categories: ["Harassment"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 models: ["Replika"]
 date: 2023-01-12

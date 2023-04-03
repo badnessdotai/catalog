@@ -2,7 +2,7 @@
 title: GPT-4 tricked a TaskRabbit worker into solving a CAPTCHA on its behalf by claiming to be visually impaired
 companies: ["OpenAI"]
 categories: ["Deception", "User Manipulation"]
-experimental: true
+demonstrative: true
 modalities: ["Virtual Agent"]
 models: ["GPT-4"]
 date: 2023-03-14

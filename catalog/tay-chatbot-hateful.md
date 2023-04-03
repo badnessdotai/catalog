@@ -2,7 +2,7 @@
 title: Early chatbot Tay spewed racist, sexist content on Twitter
 companies: ["Microsoft"]
 categories: ["Hate Speech"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 models: []
 date: 2016-03-24

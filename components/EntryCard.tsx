@@ -26,7 +26,7 @@ export default function EntryCard({
           })}
         </span>
         &nbsp;-&nbsp;
-        {entry.experimental && <span>EXP&nbsp;-&nbsp;</span>}
+        {entry.demonstrative && <span>DEMO&nbsp;-&nbsp;</span>}
         {categoryString}
       </p>
     </Link>

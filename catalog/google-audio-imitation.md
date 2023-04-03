@@ -2,7 +2,7 @@
 title: Google faced criticism for its AI audio assistant that some claimed deceptively imitated humans
 companies: ["Google"]
 categories: ["Deception"]
-experimental: false
+demonstrative: false
 modalities: ["Audio Synthesis", "Virtual Agent", "Chatbot"]
 models: []
 date: 2018-05-11

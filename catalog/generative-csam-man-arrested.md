@@ -2,7 +2,7 @@
 title: Man shared child sexual abuse material that he generated using AI
 companies: []
 categories: ["Child Safety", "Deepfakes"]
-experimental: false
+demonstrative: false
 modalities: ["Image Synthesis"]
 models: []
 date: 2022-12-21

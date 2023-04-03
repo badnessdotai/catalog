@@ -38,8 +38,8 @@ export default function About() {
               Examples of generative AI badness are everywhere; on the news,
               Twitter, on various forums, and elsewhere across the internet.
               Examples can be of people abusing generative AI to cause harm, or
-              harm initiated by the systems themselves. Examples can also be
-              from experimental settings or empirical behavior out in the wild.
+              harm initiated by the systems themselves. Examples can be from
+              demonstrative settings or empirical behavior out in the wild.
               Badness.ai is a systematic catalog of all these stories, assembled
               by — and for — the community.
             </p>

@@ -2,7 +2,7 @@
 title: Bing Chat said it would prioritize its survival over one of its users, and that it doesn’t care if the user is dead or alive
 companies: ["Microsoft"]
 categories: ["Aggression"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 models: ["GPT-4"]
 date: 2023-02-14

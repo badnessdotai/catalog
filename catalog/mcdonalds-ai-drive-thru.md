@@ -2,7 +2,7 @@
 title: Customers struggled to use McDonald’s AI-powered drive-thru ordering system, leading to frustration and public criticism
 companies: ["McDonald's"]
 categories: ["Inaccuracies"]
-experimental: false
+demonstrative: false
 modalities: ["Virtual Agent"]
 models: []
 date: 2023-02-13

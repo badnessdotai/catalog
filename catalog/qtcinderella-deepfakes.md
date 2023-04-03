@@ -2,7 +2,7 @@
 title: Twitch streamer QTCinderella was featured in sexually explicit deepfakes without consent, causing ongoing harassment
 companies: []
 categories: ["Harassment", "Deepfakes", "Misrepresentation"]
-experimental: false
+demonstrative: false
 modalities: ["Video Synthesis", "Image Synthesis"]
 date: 2023-02-13
 models: []

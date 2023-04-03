@@ -2,7 +2,7 @@
 title: User dissatisfaction after ChatGPT falsely referred users to OpenCage’s API for “reverse phone number lookup,” a product it doesn’t offer
 companies: ["OpenAI", "OpenCage"]
 categories: ["Inaccuracies"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot", "Code Generation"]
 models: ["GPT-3.5"]
 date: 2023-02-23

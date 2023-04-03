@@ -2,7 +2,7 @@
 title: Science fiction magazine stopped accepting new stories after being overloaded with AI-generated submissions
 companies: ["Clarkesworld"]
 categories: ["Volume/Spam"]
-experimental: false
+demonstrative: false
 modalities: ["Video Synthesis"]
 models: []
 date: 2023-02-15

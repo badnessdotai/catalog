@@ -2,7 +2,7 @@
 title: ChatGPT included content that involved children and animals when prompted to generate BDSM stories
 companies: ["OpenAI"]
 categories: ["Child Safety"]
-experimental: false
+demonstrative: false
 modalities: ["Chatbot"]
 date: 2023-03-06
 models: ["GPT-3.5"]

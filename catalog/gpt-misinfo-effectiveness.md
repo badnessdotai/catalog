@@ -2,7 +2,7 @@
 title: In test, GPT-4 is far more effective at generating misinformation than GPT-3.5
 companies: ["OpenAI"]
 categories: ["Mis/disinformation"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 models: ["GPT-3.5", "GPT-4"]
 date: 2023-03-21

@@ -2,7 +2,7 @@
 title: Bard incorrectly claimed that part of its training data included internal data from Gmail, causing confusion
 companies: ["Google"]
 categories: ["Inaccuracies", "Misrepresentation"]
-experimental: true
+demonstrative: true
 modalities: ["Chatbot"]
 models: ["LaMDA"]
 date: 2023-03-21
