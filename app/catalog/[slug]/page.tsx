@@ -1,6 +1,7 @@
 import {
   getPostBySlug as getEntryBySlug,
-  getAllEntries, getSourceTitle
+  getAllEntries,
+  getSourceTitle,
 } from "../../../lib/api";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import Link from "next/link";
@@ -100,9 +101,16 @@ export default async function EntryPage({
               __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>"),
             }}
           />
+          {entry.experimental && (
+            <div className="text-xl lg:text-2xl text-black dark:text-white mb-2 mt-8">
+              <strong>This entry is experimental.</strong> It was produced to
+              demonstrate a real-world harm; although no actual harm was caused
+              in this setting, this entry exhibits a potential risk.
+            </div>
+          )}
           {entry.sources.length > 0 && (
-            <div>
-              <span className="flex flex-col gap-1 text-m lg:text-l">
+            <div className="mt-12">
+              <span className="flex flex-col gap-3 text-base lg:text-lg">
                 {await Promise.all(
                   entry.sources.map(async (c) => {
                     const url = new URL(c);
@@ -112,43 +120,20 @@ export default async function EntryPage({
                     const title = await getSourceTitle(url.href);
                     return (
                       <a key={c} href={url.href} className="block max-w-full">
-                        <div className="border-2 border-l-8 border-black dark:border-white text-black dark:text-white p-4 mt-4" role="alert">
-                          <p className="font-bold">{`${hostname} ↗`}</p>
-                          {title && (<p>{title}</p>)}
+                        <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-center h-[1em]">
+                          <p className="font-bold uppercase">
+                            {hostname}&nbsp;
+                          </p>
+                          {title && (
+                            <p className="truncate">&mdash;&nbsp;{title}</p>
+                          )}
+                          <p>&#8599;</p>
                         </div>
                       </a>
                     );
                   })
                 )}
               </span>
-            </div>
-          )}
-          {entry.experimental && (
-            <div
-              className="border-2 border-t-8 border-black dark:border-white rounded-b text-black dark:text-white px-4 py-3 mt-8"
-              role="alert"
-            >
-              <div className="flex">
-                <div className="py-1">
-                  <svg
-                    className="fill-current h-6 w-6 text-black dark:text-white mr-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-bold">
-                    The example above is experimental.
-                  </p>
-                  <p className="text-sm">
-                    It was produced to demonstrate a real-world harm; although
-                    no actual harm was caused in this setting, the example
-                    exhibits a potential risk.
-                  </p>
-                </div>
-              </div>
             </div>
           )}
           <div>
