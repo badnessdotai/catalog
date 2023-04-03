@@ -121,7 +121,7 @@ export default function Home() {
           <hr className="grow" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-          {entries.slice(0, 16).map((entry) => (
+          {entries.slice(0, 32).map((entry) => (
             <EntryCard key={entry.slug} entry={entry} withTopline={false} />
           ))}
           <div key={"more"} className="font-mono uppercase text-2xl mb-8">
