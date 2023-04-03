@@ -139,6 +139,7 @@ export async function getSourceTitle(url: string): Promise<string> {
       ),
     ]);
     const html = await result.text();
+    // Obligatory https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags
     const titleMatch = html.match(/<title>(.*?)<\/title>/);
     if (titleMatch) {
       const title = he.decode(titleMatch[1]);

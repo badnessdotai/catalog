@@ -121,7 +121,7 @@ export default async function EntryPage({
                     const title = await getSourceTitle(url.href);
                     return (
                       <a key={c} href={url.href} className="block max-w-full">
-                        <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-center h-[1.1em]">
+                        <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-baseline h-[1.1em]">
                           <p className="font-mono text-lg lg:text-xl">
                             {hostname.toLocaleUpperCase()}
                             <span className="font-sans">&nbsp;&#8599;</span>
