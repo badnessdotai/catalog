@@ -127,7 +127,7 @@ export default async function EntryPage({
                           {title && (
                             <p className="truncate">&mdash;&nbsp;{title}</p>
                           )}
-                          <p>&#8599;</p>
+                          <p>&nbsp;&#8599;</p>
                         </div>
                       </a>
                     );
