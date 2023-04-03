@@ -5,9 +5,8 @@ export const metadata = {
 export default function About() {
   return (
     <main>
-      <section className="flex mt-32 lg:mt-64 gap-8">
-        <div className="w-1/6 hidden md:block" />
-        <article className="flex flex-col gap-8 justify-end max-w-5xl">
+      <section className="mt-32 lg:mt-64 w-full">
+        <article className="flex flex-col gap-8 justify-end max-w-3xl mx-auto">
           <h1 className="text-6xl lg:text-9xl font-serif">Contribute</h1>
           <p className="text-xl lg:text-4xl font-sans">
             There&apos;s tons of work to do. Here&apos;s how you can help.
@@ -28,7 +27,12 @@ export default function About() {
               <a href="https://github.com/badnessdotai/catalog/blob/main/LICENSE">
                 Apache 2.0 license
               </a>
-              .
+              , and the content on this website is licensed under the{" "}
+              <a href="https://creativecommons.org/licenses/by/4.0/">
+                CC BY 4.0
+              </a>{" "}
+              license (attribution to &ldquo;Badness.ai&rdquo;). By
+              contributing, you agree to license your content these terms.
             </p>
             <h2>Our Values</h2>
             <p>Our project is guided by the following values:</p>
@@ -96,8 +100,7 @@ export default function About() {
               <a href="https://github.com/badnessdotorg/catalog/blob/main/CODE_OF_CONDUCT.md">
                 code of conduct
               </a>
-              , which is modeled after the Contributor Covenant. All
-              contributions are licensed under the Apache 2.0 license.
+              , which is modeled after the Contributor Covenant.
             </p>
           </div>
         </article>

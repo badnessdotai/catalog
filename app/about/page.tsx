@@ -5,9 +5,8 @@ export const metadata = {
 export default function About() {
   return (
     <main>
-      <section className="flex mt-32 lg:mt-64 gap-8">
-        <div className="w-1/6 hidden md:block" />
-        <article className="flex flex-col gap-8 justify-end max-w-5xl">
+      <section className="mt-32 lg:mt-64 w-full">
+        <article className="flex flex-col gap-8 justify-end max-w-3xl mx-auto">
           <h1 className="text-6xl lg:text-9xl font-serif">About Us</h1>
           <p className="text-xl lg:text-4xl font-sans">
             Badness.ai is an open-source, community-operated catalog of harms

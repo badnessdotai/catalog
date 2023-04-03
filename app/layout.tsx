@@ -39,6 +39,25 @@ export default function RootLayout({
         </nav>
         <hr className="grow mt-2 md:hidden" />
         {children}
+        <footer className="mt-32 flex flex-col gap-8 pt-8">
+          <p className="text-center text-xs">
+            &copy; Badness.ai and contributors, {new Date().getFullYear()}.
+            Content is licensed{" "}
+            <a
+              href="https://github.com/badnessdotai/catalog/blob/main/LICENSE"
+              className="underline"
+            >
+              Apache 2.0 license
+            </a>
+            , and the content on this website is licensed under the{" "}
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/"
+              className="underline"
+            >
+              CC BY 4.0
+            </a>
+          </p>
+        </footer>
       </body>
     </html>
   );
