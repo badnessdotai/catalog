@@ -110,7 +110,8 @@ export default async function EntryPage({
           )}
           {entry.sources.length > 0 && (
             <div className="mt-12">
-              <span className="flex flex-col gap-3 text-base lg:text-lg">
+              <div className="font-serif lg:text-2xl mb-6">Sources</div>
+              <span className="flex flex-col gap-3 text-xl lg:text-2xl">
                 {await Promise.all(
                   entry.sources.map(async (c) => {
                     const url = new URL(c);
@@ -120,12 +121,14 @@ export default async function EntryPage({
                     const title = await getSourceTitle(url.href);
                     return (
                       <a key={c} href={url.href} className="block max-w-full">
-                        <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-center h-[1em]">
-                          <p className="font-bold uppercase">
-                            {hostname}&nbsp;
+                        <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-center h-[1.1em]">
+                          <p className="font-mono text-lg lg:text-xl uppercase">
+                            {hostname}
                           </p>
                           {title && (
-                            <p className="truncate">&mdash;&nbsp;{title}</p>
+                            <p className="truncate">
+                              &nbsp;&mdash;&nbsp;{title}
+                            </p>
                           )}
                           <p>&nbsp;&#8599;</p>
                         </div>
@@ -139,9 +142,7 @@ export default async function EntryPage({
           <div>
             {relatedEntries.length > 0 && (
               <div className="w-full mt-16">
-                <div className="font-mono uppercase lg:text-xl mb-8">
-                  See Also
-                </div>
+                <div className="font-serif lg:text-2xl mb-8">See Also</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
                   {relatedEntries.slice(0, 4).map((e) => (
                     <div key={e.slug}>
