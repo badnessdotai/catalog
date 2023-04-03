@@ -122,15 +122,13 @@ export default async function EntryPage({
                     return (
                       <a key={c} href={url.href} className="block max-w-full">
                         <div className="text-black dark:text-white flex flex-row overflow-y-hidden items-center h-[1.1em]">
-                          <p className="font-mono text-lg lg:text-xl uppercase">
-                            {hostname}
+                          <p className="font-mono text-lg lg:text-xl">
+                            {hostname.toLocaleUpperCase()}
+                            <span className="font-sans">&nbsp;&#8599;</span>
                           </p>
                           {title && (
-                            <p className="truncate">
-                              &nbsp;&mdash;&nbsp;{title}
-                            </p>
+                            <p className="truncate ml-4 lg:ml-6">{title}</p>
                           )}
-                          <p>&nbsp;&#8599;</p>
                         </div>
                       </a>
                     );
