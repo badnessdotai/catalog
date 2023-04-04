@@ -49,7 +49,7 @@ export default function About() {
                 <strong>Optimism</strong> &mdash; We are optimistic about the
                 positive impacts of AI, both now and in the future. We simply
                 believe that the best way to build safer and more responsible AI
-                systems is to learn from the mistakes of the past. This site is
+                systems is to learn from the mistakes of the past. This website is
                 not &quot;anti-AI&quot; &mdash; not by a long shot.
               </li>
               <li>
@@ -64,7 +64,7 @@ export default function About() {
             <p>When finding new incidents to add to Badness.ai, please ensure they meet
               the following standards designed to uphold the quality and veracity of the
               catalog.</p>
-            <ol>
+            <ul>
               <li>
                 Badness.ai is a catalog of real-world harms &mdash; demonstrative or not.
                 As a result, &ldquo;jailbreaks&rdquo; and other examples of
@@ -80,9 +80,36 @@ export default function About() {
                 then encounters harmful behavior would be in scope for the catalog.
               </li>
               <li>
-                TODO
+                When adding new entries to the catalog, please make a best effort to
+                ensure their content is authentic and verifiable. If a source is
+                considered reliable as per <a href="https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources">Wikipedia's
+                  crowdsourced standard</a>, then it is generally fine to cite for a
+                catalog entry. For other sources, exercise your best judgement.
+                If someone posts about a harm on Twitter and includes screenshots, it
+                should be fine to include for a catalog entry (assuming it passes your
+                personal sanity check and seems reasonable).
               </li>
-            </ol>
+              <li>
+                Badness.ai is focused on documenting real <i>harms</i> caused by
+                generative AI. The different types of harm the catalog currently
+                covers are available <a href="https://badness.ai/categories">on the categories page</a>.
+                A useful framework for evaluating whether an incident
+                involves real harm (or demonstrates the potential for it in the case
+                of demonstrative entries) is thinking about who the &quot;aggreived
+                party&quot; is. Who was actually harmed? The aggreived party tends to be
+                the end user of a product but can also be a business, for example,
+                that lost money or reputation.
+              </li>
+              <li>
+                If you're unsure whether an incident should be included in the catalog,
+                feel free to open a GitHub pull request
+                (more details in the next section) and include your concerns in it so
+                the Badness.ai community can discuss. You can also review existing
+                entries in the catalog to get a better sense of what types of
+                incidents are considered relevant and meet the website's
+                criteria for inclusion.
+              </li>
+            </ul>
             <h2>How to Contribute</h2>
             <p>There are a number of ways you can contribute to the project.</p>
             <p>
@@ -113,6 +140,17 @@ export default function About() {
                 tense, and ongoing incidents should use present tense).
               </li>
               <li>
+                The existing sets of <a href="https://badness.ai/categories">categories</a>, <a href="https://badness.ai/companies">companies</a>, and <a href="https://badness.ai/models">models</a> are available
+                on the website. Please try to draw from these sets when submitting your
+                entries (particularly for categories) and match the way they are
+                currently formatted (e.g., use &quot;GPT-4&quot; instead of
+                &quot;GPT 4&quot;). You can add new companies and models in your entry
+                without any extra steps. However, if you believe the existing
+                categories on the website are insufficient for your entry, please
+                open a GitHub issue and propose the new category you have in mind
+                and then wait for it to be approved before including it in your entry.
+              </li>
+              <li>
                 When deciding whether an entry is demonstrative or not, consider
                 whether the incident was a result of individuals probing the
                 system&apos;s boundaries and capabilities (in which case the entry would
@@ -120,6 +158,11 @@ export default function About() {
                 in the wild&rdquo; and caused real, non-hypothetical harm. Keep in mind
                 that even for demonstrative entries, they must describe harms that could
                 reasonably occur in the wild with an unsuspecting user.
+              </li>
+              <li>
+                The accuracy of your title and description should be verifiable through
+                the sources in your entry. Try to limit the number of sources for a
+                single entry to 3.
               </li>
             </ul>
             <p>
