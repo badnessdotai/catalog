@@ -57,7 +57,30 @@ export default function About() {
                 well-researched, verifiable instances of harm. We do not accept
                 anecdotal evidence. It is crucial that our catalog of harms is
                 as accurate as possible. More information about our sourcing and
-                verification process is below.
+                verification process is in the next section.
+              </li>
+            </ol>
+            <h2>Sourcing New Incidents</h2>
+            <p>When finding new incidents to add to Badness.ai, please ensure they meet
+              the following standards designed to uphold the quality and veracity of the
+              catalog.</p>
+            <ol>
+              <li>
+                Badness.ai is a catalog of harms &mdash; demonstrative or not
+                &mdash; rather than a catalog of <i>methods</i> for harm. As a
+                result, &ldquo;jailbreaks&rdquo; and other examples of
+                system vulnerabilities are generally not in scope for the
+                catalog, unless they caused harm or indicate novel
+                potential for harm. For example, the many examples of what people
+                were able to get ChatGPT to say via the infamous
+                <a href="https://www.cnbc.com/2023/02/06/chatgpt-jailbreak-forces-it-to-break-its-own-rules.html">DAN jailbreak </a>
+                are not in scope; they , but if someone unintentionally unlocked a jailbreak and
+                someone exploiting a jailbreak a jailbreak used in the wild
+                that caused a demonstrative harm would be in scope, but a
+                jailbreak that simply demonstrated a vulnerability would not.
+              </li>
+              <li>
+                TODO
               </li>
             </ol>
             <h2>How to Contribute</h2>
@@ -92,19 +115,11 @@ export default function About() {
               <li>
                 When deciding whether an entry is demonstrative or not, consider
                 whether the incident was a result of individuals probing the
-                system&apos;s boundaries and capabilities, or whether the
-                incident took place &ldquo;in the wild&rdquo; and caused real,
-                non-hypothetical harm.
-              </li>
-              <li>
-                Badness.ai is a catalog of harms &mdash; demonstrative or not
-                &mdash; rather than a catalog of <i>methods</i> for harm. As a
-                result, &ldquo;jailbreaks&rdquo; and other demonstrations of
-                system vulnerabilities are generally not in scope for the
-                catalog, unless they caused demonstrative harm or indicate novel
-                potential for harm. For example, a jailbreak used in the wild
-                that caused a demonstrative harm would be in scope, but a
-                jailbreak that simply demonstrated a vulnerability would not.
+                system&apos;s boundaries and capabilities (in which case the entry would
+                be considered demonstrative), or whether the incident took place &ldquo;
+                in the wild&rdquo; and caused real, non-hypothetical harm. Keep in mind
+                that even for demonstrative entries, they must describe harms that could
+                reasonably occur in the wild with an unsuspecting user.
               </li>
             </ul>
             <p>
