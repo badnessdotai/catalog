@@ -89,14 +89,17 @@ export default function About() {
               </li>
               <li>
                 Badness.ai is focused on documenting real <i>harms</i> caused by
-                generative AI. The different types of harm the catalog currently
-                covers are available <a href="/categories">on the categories page</a>.
+                generative AI. You can find the different types of harm the catalog
+                currently covers <a href="/categories">on the categories page</a>.
                 A useful framework for evaluating whether an incident
-                involves real harm (or demonstrates the potential for it in the case
-                of demonstrative entries) is thinking about who the &quot;aggreived
-                party&quot; is. Who was actually harmed? The aggreived party tends to be
-                the end user of a product but can also be a business, for example,
-                that lost money or reputation.
+                involves real harm is thinking about who the &quot;aggrieved
+                party&quot; is &mdash; that is, who was actually harmed.
+                The aggrieved party is often the end user of a product but can also
+                be a business, for example, that lost money or reputation.
+                In the case of demonstrative entries, when trying to evaluate
+                the <i>potential</i> for real harm, think pragmatically about
+                who the aggrieved party would have been had the incident
+                occured outside of an experimental setting.
               </li>
               <li>
                 If you're unsure whether an incident should be included in the catalog,
