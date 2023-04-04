@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import Fonts from "../components/Fonts";
+import Analytics from "@/components/Analytics";
 
 export const metadata = {
   title: "Catalog of generative AI harms | Badness.ai",
@@ -58,6 +59,7 @@ export default function RootLayout({
             </a>
           </p>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
