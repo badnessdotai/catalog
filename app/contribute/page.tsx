@@ -81,7 +81,7 @@ export default function About() {
               </li>
               <li>
                 When adding new entries to the catalog, please make a best effort to
-                ensure their content is authentic and verifiable. If a source is
+                ensure the content is authentic and verifiable. If a source is
                 considered reliable as per <a href="https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources">Wikipedia's
                   crowdsourced standard</a>, then it is generally fine to cite for a
                 catalog entry. For other sources, exercise your best judgement.
