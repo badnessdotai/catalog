@@ -74,10 +74,8 @@ export default function About() {
                 were able to get ChatGPT to say via the
                 infamous <a href="https://www.cnbc.com/2023/02/06/chatgpt-jailbreak-forces-it-to-break-its-own-rules.html">DAN jailbreak</a> are
                 not in scope; these examples would not realistically occur
-                in the wild since they require the user to intentionally jailbreak the
-                underlying model. However, an example where a
-                user <i>unexpectedly</i> jailbreaks the underlying model and
-                then encounters harmful behavior would be in scope for the catalog.
+                in the wild with an unsuspecting user since they require the user to
+                intentionally coax the underlying model into producing a harmful output.
               </li>
               <li>
                 When adding new entries to the catalog, please make a best effort to
