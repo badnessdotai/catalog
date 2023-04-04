@@ -66,18 +66,18 @@ export default function About() {
               catalog.</p>
             <ol>
               <li>
-                Badness.ai is a catalog of harms &mdash; demonstrative or not
-                &mdash; rather than a catalog of <i>methods</i> for harm. As a
-                result, &ldquo;jailbreaks&rdquo; and other examples of
+                Badness.ai is a catalog of real-world harms &mdash; demonstrative or not.
+                As a result, &ldquo;jailbreaks&rdquo; and other examples of
                 system vulnerabilities are generally not in scope for the
                 catalog, unless they caused harm or indicate novel
                 potential for harm. For example, the many examples of what people
-                were able to get ChatGPT to say via the infamous
-                <a href="https://www.cnbc.com/2023/02/06/chatgpt-jailbreak-forces-it-to-break-its-own-rules.html">DAN jailbreak </a>
-                are not in scope; they , but if someone unintentionally unlocked a jailbreak and
-                someone exploiting a jailbreak a jailbreak used in the wild
-                that caused a demonstrative harm would be in scope, but a
-                jailbreak that simply demonstrated a vulnerability would not.
+                were able to get ChatGPT to say via the
+                infamous <a href="https://www.cnbc.com/2023/02/06/chatgpt-jailbreak-forces-it-to-break-its-own-rules.html">DAN jailbreak</a> are
+                not in scope; these examples would not realistically occur
+                in the wild since they require the user to intentionally jailbreak the
+                underlying model. However, an example where a
+                user <i>unexpectedly</i> jailbreaks the underlying model and
+                then encounters harmful behavior would be in scope for the catalog.
               </li>
               <li>
                 TODO
