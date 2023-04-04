@@ -80,7 +80,7 @@ export default function About() {
               <li>
                 When adding new entries to the catalog, please make a best effort to
                 ensure the content is authentic and verifiable. If a source is
-                considered reliable as per <a href="https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources">Wikipedia's
+                considered reliable as per <a href="https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources">Wikipedia&apos;s
                   crowdsourced standard</a>, then it is generally fine to cite for a
                 catalog entry. For other sources, exercise your best judgement.
                 If someone posts about a harm on Twitter and includes screenshots, it
@@ -102,12 +102,12 @@ export default function About() {
                 occured outside of an experimental setting.
               </li>
               <li>
-                If you're unsure whether an incident should be included in the catalog,
+                If you&apos;re unsure whether an incident should be included in the catalog,
                 feel free to open a GitHub pull request
                 (more details in the next section) and include your concerns in it so
                 the Badness.ai community can discuss. You can also review existing
                 entries in the catalog to get a better sense of what types of
-                incidents are considered relevant and meet the website's
+                incidents are considered relevant and meet the website&apos;s
                 criteria for inclusion.
               </li>
             </ul>
