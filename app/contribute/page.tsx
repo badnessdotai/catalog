@@ -140,7 +140,7 @@ export default function About() {
                 tense, and ongoing incidents should use present tense).
               </li>
               <li>
-                The existing sets of <a href="https://badness.ai/categories">categories</a>, <a href="https://badness.ai/companies">companies</a>, and <a href="https://badness.ai/models">models</a> are available
+                The existing sets of <a href="/categories">categories</a>, <a href="/companies">companies</a>, and <a href="/models">models</a> are available
                 on the website. Please try to draw from these sets when submitting your
                 entries (particularly for categories) and match the way they are
                 currently formatted (e.g., use &quot;GPT-4&quot; instead of
