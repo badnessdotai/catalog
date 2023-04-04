@@ -92,7 +92,7 @@ export default function About() {
               <li>
                 Badness.ai is focused on documenting real <i>harms</i> caused by
                 generative AI. The different types of harm the catalog currently
-                covers are available <a href="https://badness.ai/categories">on the categories page</a>.
+                covers are available <a href="/categories">on the categories page</a>.
                 A useful framework for evaluating whether an incident
                 involves real harm (or demonstrates the potential for it in the case
                 of demonstrative entries) is thinking about who the &quot;aggreived
