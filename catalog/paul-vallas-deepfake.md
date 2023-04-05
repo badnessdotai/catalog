@@ -1,7 +1,7 @@
 ---
 title: Thousands of Twitter users viewed a deepfake video of Chicago politician Paul Vallas, which was designed to discredit him
 companies: []
-categories: ["Deepfakes", "Mis/disinformation"]
+categories: ["Deepfakes", "Mis and Disinformation"]
 demonstrative: false
 modalities: ["Video Synthesis"]
 models: []

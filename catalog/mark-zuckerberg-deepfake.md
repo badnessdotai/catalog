@@ -1,7 +1,7 @@
 ---
 title: A deepfake video created as artistic commentary depicting Mark Zuckerberg talking about controlling “billions of people’s stolen data” spread without context
 companies: ["CannyAI", "Respeecher", "Reflect"]
-categories: ["Deepfakes", "Misrepresentation", "Mis/disinformation"]
+categories: ["Deepfakes", "Misrepresentation", "Mis and Disinformation"]
 demonstrative: false
 modalities: ["Video Synthesis"]
 models: []

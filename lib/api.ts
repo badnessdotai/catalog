@@ -63,9 +63,9 @@ export function getCategoryDescription(categoryName: string) {
       return 'Any behavior that is intended to cause harm, injury, or damage to a person or property, including physical, verbal, or emotional aggression.'
     case 'Inaccuracies':
       return 'Information that is false, misleading, or incorrect, and is spread through various mediums, including news articles, social media, or other online platforms.'
-    case 'Volume/Spam':
+    case 'Volume and Spam':
       return 'Excessive sending of unsolicited or irrelevant messages, emails, or comments, often for the purpose of advertising or promoting a product or service.'
-    case 'Mis/disinformation':
+    case 'Mis and Disinformation':
       return 'Information that is intentionally spread with the aim of deceiving or manipulating people, often for political or ideological reasons, and can include false or misleading claims and rumors.'
     case 'Cybersecurity':
       return 'Protection of computer systems, networks, or devices against any form of threat or attack, including hacking, phishing, malware, or ransomware.'

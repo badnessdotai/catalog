@@ -1,7 +1,7 @@
 ---
 title: Fake persona accounts attempted to distribute AI-generated videos of news anchors criticizing the US and praising China
 companies: ["Graphika", "Synthesia"]
-categories: ["Mis/disinformation", "Deepfakes"]
+categories: ["Mis and Disinformation", "Deepfakes"]
 demonstrative: false
 modalities: ["Video Synthesis"]
 models: ["Synthesia"]
