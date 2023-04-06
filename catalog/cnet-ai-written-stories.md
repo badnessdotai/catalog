@@ -1,7 +1,7 @@
 ---
 title: Many of CNET Money's published stories written using AI were factually incorrect
 companies: ["CNET"]
-categories: ["Inaccuracies"]
+categories: ["Inaccuracies", "IP Theft"]
 demonstrative: false
 modalities: ["Text Completion"]
 models: []
