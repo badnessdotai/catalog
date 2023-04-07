@@ -1,7 +1,7 @@
 ---
 title: CNET Money's published 41 stories using AI that were factually incorrect
 companies: ["CNET"]
-categories: ["Inaccuracies", "Plagiarism"]
+categories: ["Inaccuracies", "Plagiarism", "Overreliance"]
 demonstrative: false
 modalities: ["Text Completion"]
 models: []
