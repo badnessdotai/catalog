@@ -118,19 +118,18 @@ export default function About() {
             <h2>How to Contribute</h2>
             <p>There are a number of ways you can contribute to the project.</p>
             <p>
-              If you have a suggestion, found an issue, or want to share an
-              idea, please feel free to{" "}
-              <a href="https://github.com/badnessdotai/catalog/issues">
-                create a GitHub issue
-              </a>{" "}
-              on our{" "}
-              <a href="https://github.com/badnessdotai/catalog">repository</a>.
-            </p>
-            <p>
               To add a new incident to the catalog, please do so using a GitHub
               pull request. Incidents of harm are stored in the{" "}
               <code>catalog/</code> directory; simply add a new file there. You
-              can use the existing incidents as a reference. Please follow these
+              can use the existing incidents as a reference. If you are unfamiliar
+              with the process of creating a GitHub pull request and want to contribute
+              directly from a web interface,
+              please <a href="https://github.com/join">create a GitHub account</a> and
+              then check out
+              our <a href="https://youtu.be/GscCn5vmjK4">tutorial video</a>.
+            </p>
+            <p>
+              Please follow these
               guidelines when contributing an entry:
             </p>
             <ul>
@@ -170,6 +169,15 @@ export default function About() {
                 single entry to 3.
               </li>
             </ul>
+            <p>
+              If you have a suggestion, found an issue, or want to share an
+              idea, please feel free to{" "}
+              <a href="https://github.com/badnessdotai/catalog/issues">
+                create a GitHub issue
+              </a>{" "}
+              on our{" "}
+              <a href="https://github.com/badnessdotai/catalog">repository</a>.
+            </p>
             <p>
               All contributions to the project are subject to review by the
               project maintainers. We will do our best to respond to all
