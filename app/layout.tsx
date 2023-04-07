@@ -42,8 +42,8 @@ export default function RootLayout({
         {children}
         <footer className="mt-32 flex flex-col gap-8 pt-8">
           <p className="text-center text-xs">
-            &copy; Badness.ai and contributors, {new Date().getFullYear()}.
-            Content is licensed{" "}
+            &copy; Badness.ai and contributors, {new Date().getFullYear()}. Code
+            is licensed{" "}
             <a
               href="https://github.com/badnessdotai/catalog/blob/main/LICENSE"
               className="underline"
