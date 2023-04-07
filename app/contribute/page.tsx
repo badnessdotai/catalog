@@ -118,8 +118,9 @@ export default function About() {
             <h2>How to Contribute</h2>
             <p>There are a number of ways you can contribute to the project.</p>
             <p>
-              To add a new incident to the catalog, please do so using a GitHub
-              pull request. Incidents of harm are stored in the{" "}
+              To add a new incident to the catalog, please do so
+              using <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">a GitHub pull request</a>.
+              Incidents of harm are stored in the{" "}
               <code>catalog/</code> directory; simply add a new file there. You
               can use the existing incidents as a reference. If you are unfamiliar
               with the process of creating a GitHub pull request and want to contribute
