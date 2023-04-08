@@ -75,7 +75,7 @@ export function getCategoryDescription(categoryName: string) {
       return 'Presence of biases or prejudices in artificial intelligence or machine learning models that can lead to unfair or discriminatory outcomes, often against marginalized or underrepresented groups.'
     case 'Misrepresentation':
       return 'Use of false, misleading, or exaggerated information to present a person, business, product, or service in a way that is deceptive or dishonest.'
-    case 'IP Theft':
+    case 'Plagiarism':
       return 'Unauthorized use or theft of intellectual property, including patents, copyrights, or trade secrets, often for the purpose of financial gain.'
     default:
       return '';

@@ -1,7 +1,7 @@
 ---
 title: An illustrator accused Lensa AI of stealing from the works of other artists
 companies: ["Lensa AI"]
-categories: ["IP Theft"]
+categories: ["Plagiarism"]
 demonstrative: false
 modalities: ["Image Synthesis"]
 models: ["Stable Diffusion"]
