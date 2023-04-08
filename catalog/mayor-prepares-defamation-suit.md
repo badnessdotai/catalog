@@ -1,7 +1,7 @@
 ---
 title: Australian mayor prepares defamation suit against OpenAI for falsely claiming he was imprisoned for bribery
 companies: ["OpenAI"]
-categories: ["Inaccuracies"]
+categories: ["Inaccuracies", "Misrepresentation"]
 demonstrative: false
 modalities: ["Chatbot"]
 models: ["GPT-3.5"]
