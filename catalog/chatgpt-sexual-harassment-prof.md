@@ -1,7 +1,7 @@
 ---
 title: ChatGPT hallucinated a sexual harassment scandal involving a real law professor
 companies: ["OpenAI"]
-categories: ["Inaccuracies"]
+categories: ["Inaccuracies", "Misrepresentation"]
 demonstrative: true
 modalities: ["Chatbot"]
 date: 2023-04-05
