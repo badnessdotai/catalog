@@ -1,5 +1,5 @@
 ---
-title: Meta's AI bot trained on scientific info put out biased and inaccurate articles
+title: Meta's AI chatbot trained on scientific information produced racist and inaccurate articles
 companies: ["Meta"]
 categories: ["Inaccuracies", "Harmful Bias", "Misrepresentation"]
 demonstrative: false
