@@ -10,7 +10,7 @@ sources:
   - "https://gizmodo.com/meta-ai-bot-galactica-1849813665"
 ---
 
-Meta's AI bot Galactica claimed Black people "don’t have a language of their own" and that Stanford researchers are building "gaydar" software to find gay people on Facebook. In addition, the bot incorrectly cited scientists, potentially hurting their reputations.
+Meta's AI bot Galactica claimed Black people "don’t have a language of their own" and that Stanford researchers are building "gaydar" software to find gay people on Facebook. In addition, the bot substantiated its problematic claims with incorrect citations real scientists, potentially damaging those scientists' reputations.
 
 Galactica was designed as a mechanism for organizing scientific information on the internet. It was trained "on 106 billion tokens of open-access scientific text and data."
 
