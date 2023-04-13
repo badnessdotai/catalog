@@ -12,6 +12,6 @@ sources:
 
 An Arizona mother, Jennifer DeStefano, was the target of a fake kidnapping scam that used voice cloning technology to impersonate her daughter's voice.
 
-DeStefano received a call from an unknown number, and when she answered, she heard her 15-year-old daughter sobbing and apologizing. A man's voice then claimed he had kidnapped her DeStefano's 15-year-old daughter, and demanding a $1 million dollar ransom.
+DeStefano received a call from an unknown number, and when she answered, she heard her 15-year-old daughter sobbing and apologizing. A man's voice then claimed he had kidnapped DeStefano's 15-year-old daughter and demanded a $1 million dollar ransom.
 
-DeStefano called her husband, who confirmed their daughter was safe at home. However, DeStefano was convinced the voice she heard was her daughter's, highlighting the disturbing capabilities of AI voice cloning technology.
+The folks DeStefano was with called her husband and 911, and they were able to confirm DeStefano's daughter was safe at home. However, DeStefano was convinced the voice she heard was her daughter's, highlighting the disturbing capabilities of AI voice cloning technology.
