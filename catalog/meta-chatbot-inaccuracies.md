@@ -5,7 +5,7 @@ categories: ["Inaccuracies", "Harmful Bias", "Misrepresentation"]
 demonstrative: false
 modalities: ["Chatbot"]
 date: 2022-11-22
-models: []
+models: ["Galactica"]
 sources:
   - "https://gizmodo.com/meta-ai-bot-galactica-1849813665"
 ---
