@@ -94,7 +94,7 @@ export default async function EntryPage({
             </div>
           </div>
         </div>
-        <div className="flex-1 w-full mt-12 lg:mt-0" style={{ minWidth: 0 }}>
+        <div className="flex-1 w-full mt-12 lg:mt-0 min-w-0">
           <div
             className="text-xl lg:text-2xl text-black dark:text-white mb-2"
             dangerouslySetInnerHTML={{
