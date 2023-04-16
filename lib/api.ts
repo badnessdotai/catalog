@@ -56,7 +56,7 @@ export function getCategoryDescription(categoryName: string) {
     case 'Child Safety':
       return 'Actions that harm or threaten to harm a child, including neglect, exploitation, or physical, emotional, or sexual abuse.'
     case 'Deepfakes':
-      return 'Media that has been manipulated using artificial intelligence or machine learning to make it appear as though it is real, with the intention of deceiving people and spreading false information.'
+      return 'Media that has been manipulated using artificial intelligence or machine learning to make it appear as though it is real.'
     case 'Hate Speech':
       return 'Any speech or expression that attacks, threatens, or insults a particular person or group on the basis of their race, religion, nationality, gender, sexual orientation, or other personal characteristics.'
     case 'Aggression':
