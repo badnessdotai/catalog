@@ -14,4 +14,4 @@ A new Twitter account called “Chicago Lakefront News” posted a video of Paul
 
 Thousands of users viewed the video before it was taken down.
 
-Paul Villas’ campaign responded to the video stating that it was obvious fake and used to “defame [Paul’s] character.”
+Paul Vallas’ campaign responded to the video stating that it was obvious fake and used to “defame [Paul’s] character.”
