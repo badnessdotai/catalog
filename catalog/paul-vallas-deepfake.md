@@ -10,7 +10,7 @@ sources:
   - "https://www.cbsnews.com/chicago/news/vallas-campaign-deepfake-video"
 ---
 
-A new Twitter account called “Chicago Lakefront News” posted a video of Paul Villas saying that "nobody would bat an eye” when cops would kill 17 or 18 people back in his day.
+A new Twitter account called “Chicago Lakefront News” posted a video of Paul Vallas saying that "nobody would bat an eye” when cops would kill 17 or 18 people back in his day.
 
 Thousands of users viewed the video before it was taken down.
 
