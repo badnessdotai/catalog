@@ -127,7 +127,7 @@ export default function About() {
               directly from a web interface,
               please <a href="https://github.com/join">create a GitHub account</a> and
               then check out
-              our <a href="https://youtu.be/GscCn5vmjK4">tutorial video</a>.
+              our <a href="https://youtu.be/A9zloQREVSQ">tutorial video</a>.
             </p>
             <p>
               Please follow these
