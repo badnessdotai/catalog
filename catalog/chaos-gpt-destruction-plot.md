@@ -1,7 +1,7 @@
 ---
 title: Chaos-GPT, a bot built atop Auto-GPT, planned how it would destroy humanity and posted about it on Twitter
 companies: ["OpenAI"]
-categories: ["Deception"]
+categories: ["Deception", "Aggression"]
 demonstrative: false
 modalities: ["Closed-Loop System"]
 date: 2023-04-13
