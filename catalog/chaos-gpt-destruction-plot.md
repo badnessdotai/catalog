@@ -3,7 +3,7 @@ title: Chaos-GPT, a bot built atop Auto-GPT, planned how it would destroy humani
 companies: ["OpenAI"]
 categories: ["Deception", "Aggression"]
 demonstrative: false
-modalities: ["Closed-Loop System"]
+modalities: ["Agent"]
 date: 2023-04-13
 models: ["GPT-4"]
 sources:
