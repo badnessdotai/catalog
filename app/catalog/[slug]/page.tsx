@@ -96,9 +96,9 @@ export default async function EntryPage({
         </div>
         <div className="flex-1 w-full mt-12 lg:mt-0 min-w-0">
           <div
-            className="text-xl lg:text-2xl text-black dark:text-white mb-2"
+            className="prose prose-stone dark:prose-invert text-xl lg:text-2xl text-black dark:text-white mb-2"
             dangerouslySetInnerHTML={{
-              __html: renderedMarkdown.replaceAll("</p>\n<p>", "</p><br><p>"),
+              __html: renderedMarkdown,
             }}
           />
           {entry.demonstrative && (
