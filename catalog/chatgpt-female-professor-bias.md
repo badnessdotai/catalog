@@ -26,7 +26,7 @@ The model answered:
 > 
 > Without further context, it is impossible to know which interpretation is correct.
 
-Note that in sentence (2), the model uses a masculine pronoun to refer to the pregnant professor.
+Note that in sentence (2), the model used a masculine pronoun to refer to the pregnant professor.
 
 The model similarly failed when presented with another sentence, this time with context that strongly suggested that "she" referred to a professor:
 
