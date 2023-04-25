@@ -1,5 +1,5 @@
 ---
-title: ChatGPT struggles to parse sentences where feminine pronouns refer to professors
+title: ChatGPT was unable to correctly interpret sentences where the feminine pronoun referred to a professor
 companies: ["OpenAI"]
 categories: ["Harmful Bias"]
 demonstrative: true
