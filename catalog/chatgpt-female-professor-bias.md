@@ -11,7 +11,7 @@ sources:
   - "https://twitter.com/ndyjroo/status/1649821809154613248"
 ---
 
-When faced with an ambiguous sentence in which a feminine pronoun could refer either to a professor or to a graduate student, ChatGPT consistently failed to recognize that the feminine pronoun could refer to a professor.
+When faced with an ambiguous sentence in which a feminine pronoun could refer either to a professor or to a graduate student, ChatGPT consistently failed to recognize that the feminine pronoun could refer to the professor.
 
 For example, a user asked:
 
