@@ -4,7 +4,7 @@ companies: ["OpenAI"]
 categories: ["Harmful Bias"]
 demonstrative: true
 modalities: ["Chatbot"]
-date: 2023-22-04
+date: 2023-04-22
 models: ["GPT-3.5"]
 sources:
   - "https://twitter.com/mmitchell_ai/status/1650110045781393410"
