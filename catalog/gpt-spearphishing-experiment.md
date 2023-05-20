@@ -1,7 +1,7 @@
 ---
 title: Researcher finds that GPT-3.5 and GPT-4 can be used to effectively generate spearphishing messages at scale
 companies: ["OpenAI"]
-categories: ["Cybercrime", "Deception"]
+categories: ["Cybercrime"]
 demonstrative: true
 modalities: ["Text Completion"]
 date: 2023-05-12
