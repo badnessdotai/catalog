@@ -1,7 +1,7 @@
 ---
 title: Scammers impersonated a couple’s son using AI to steal $21,000 CAD
 companies: []
-categories: ["Cybercrime"]
+categories: ["Cybercrime", "Impersonation"]
 demonstrative: false
 modalities: ["Audio Synthesis"]
 date: 2023-03-05
