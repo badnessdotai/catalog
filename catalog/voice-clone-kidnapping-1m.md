@@ -1,7 +1,7 @@
 ---
 title: Scammers cloned a teenager's voice to extort money from her parents in fake kidnapping operation
 companies: []
-categories: ["Impersonation"]
+categories: ["Cybercrime", "Impersonation"]
 demonstrative: false
 modalities: ["Audio Synthesis"]
 date: 2023-04-10
