@@ -19,6 +19,3 @@ by deepfakes. At a rally, Erdoğan showed supporters a Kılıçdaroğlu campaign
 exhibiting members of Kurdistan Workers' Party (PKK) singing the opposition party's
 song. PKK is designated as a terrorist organization by Turkey. The fact-checking site
 Teyit claims this video was doctored.
-
-Kılıçdaroğlu believes Russia may be behind much of the disinformation impacting the
-Turkish election.
